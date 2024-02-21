@@ -1,0 +1,204 @@
+/* -----------------CSS reset----------------- */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  font-family: "arial", sans-serif;
+  scroll-behavior: smooth scroll;
+  scroll-snap-type: mandatory;
+  scroll-snap-align: start;
+}
+
+.navbar {
+  display: flex;
+  overflow: hidden;
+  position: fixed;
+  background: hsl(0, 0%, 0%);
+  width: 100dvw;
+  height: 5rem;
+  padding-block: 1rem;
+  z-index: 10;
+}
+
+.navbar a {
+  padding: 0.5rem;
+}
+
+.navbar a:hover:not(.logo) {
+  color: lightskyblue;
+  outline: 3px solid lightskyblue;
+  border-radius: 100px;
+}
+
+.nav-logo-left {
+  display: flex;
+  align-items: center;
+  font-size: 3rem;
+  flex: 5;
+  padding-inline-start: 2rem;
+  border-right: 3px solid whitesmoke;
+}
+
+.logo {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.nav-items-right {
+  display: flex;
+  flex-grow: 1;
+  gap: 4rem;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-inline: 2rem;
+}
+
+.nav-items-right a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+/* -----------------HOME----------------- */
+
+.home-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100vh;
+  text-align: left;
+  width: 100%;
+  background-color: black;
+  padding-inline: 7%;
+  position: relative;
+}
+
+.greeting {
+  font-size: 85px;
+  font-weight: 100;
+}
+
+.name {
+  font-size: 45px;
+}
+
+.description {
+  margin-right: 150px;
+  min-width: 240px;
+  max-width: 650px;
+  line-height: 2rem;
+  font-size: 1.25rem;
+  /* font-style: italic; */
+  padding-block: 2rem;
+}
+
+.description a {
+  color: lightskyblue;
+  text-decoration: none;
+}
+
+.description a:hover {
+  color: lightskyblue;
+}
+
+.cta {
+  display: flex;
+  font-weight: 600;
+  font-size: 24px;
+  min-width: 240px;
+  width: fit-content;
+  align-items: left;
+  justify-content: left;
+  padding-block: 1.5rem;
+  /* font-style: normal; */
+  position: absolute;
+}
+
+.cta a {
+  text-decoration: underline;
+  padding-left: 0.32rem;
+  color: lightskyblue;
+}
+
+.contact-links--wrapper {
+  display: flex;
+  justify-content: left;
+  gap: 5%;
+  align-items: center;
+  position: absolute;
+  bottom: 0.5rem;
+  left: 2rem;
+}
+
+.contact-links--wrapper a {
+  color: whitesmoke;
+}
+
+.contact-links--wrapper a:hover {
+  color: lightskyblue;
+}
+
+.contact-links--wrapper svg,
+img {
+  height: 35px;
+  width: 35px;
+}
+
+.scroll-down-button {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 50vw;
+  color: whitesmoke;
+}
+
+.scroll-down-button > * {
+  height: 35px;
+  width: 35px;
+}
+
+/* -----------------PROJECTS----------------- */
+
+.projects-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100svh;
+  text-align: left;
+  min-width: 240px;
+  width: 100%;
+  background-color: rgb(53, 53, 53);
+}
+/* -----------------ABOUT----------------- */
+
+.about-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100svh;
+  text-align: left;
+  min-width: 240px;
+  width: 100%;
+  background-color: black;
+}
+
+/* -----------------CONTACT----------------- */
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 100svh;
+  text-align: left;
+  min-width: 240px;
+  width: 100%;
+  background-color: rgb(53, 53, 53);
+}
