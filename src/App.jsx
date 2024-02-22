@@ -6,8 +6,8 @@ import About from "./Components/Pages/About";
 
 // import { motion } from "framer-motion"
 
-
 import "./App.css";
+import Footer from "./Components/Footer";
 
 function App() {
   return (
@@ -17,6 +17,7 @@ function App() {
       <Projects />
       <About />
       <Contact />
+      <Footer />
     </div>
   );
 }
