@@ -10,10 +10,10 @@ function Home() {
           I{"'"}m <strong className="elliott">Elliott Saruski,</strong>
         </h2>
         <span className="description">
-          a Marketer turned Front End Dev with a specialty in React. In my spare
-          time I make
+          a Marketer turned Front End Dev with a specialty in React. In my
+          spare time I make
           <a href="https://soundcloud.com/envimusic"> electronic music</a>,
-          <a> 3D graphics & other multimedia</a>, & I love to scour the internet
+          <a> 3D graphics / other multimedia</a>, & I love to scour the internet
           for the latest & greatest in web tech.
           {/* potential to add blog here?? */}
           <hr></hr>

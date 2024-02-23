@@ -13,13 +13,11 @@ function Contact() {
           <hr className="social-link-hr"></hr>
           LinkedIn
         </a>
-        <hr className="contact-divider-hr"></hr>
         <a className="social-link" href="https://github.com/elliottsaruski">
           <FaGithub />
           <hr className="social-link-hr"></hr>
           Github
         </a>
-        <hr className="contact-divider-hr"></hr>
         <a className="social-link" href="https://twitter.com/_envimusic">
           <FaSquareXTwitter />
           <hr className="social-link-hr"></hr>Twitter
