@@ -5,26 +5,32 @@ function Home() {
   return (
     <div id="home" className="home-wrapper">
       <div className="home-flex-1">
-        <h1 className="greeting">Hi there!</h1>
-        <h2 className="name">
-          I{"'"}m <strong className="elliott">Elliott Saruski,</strong>
-        </h2>
+        <span className="greeting">Hi there!</span>
+
+        <div className="greeting-wrapper">
+          {" "}
+          <span className="IM">I{"'"}m</span>
+          <h2 className="name">
+            <strong className="elliott">Elliott Saruski</strong>,
+          </h2>
+        </div>
+
         <span className="description">
           a Marketer turned Front End Dev with a specialty in React. In my spare
           time I make
-          <a href="https://soundcloud.com/envimusic"> electronic music</a>,
-          <a> 3D graphics / other multimedia</a>, & I love to scour the internet
-          for the latest & greatest in web tech.
+          <a href="https://soundcloud.com/envimusic"> electronic music</a>, 3D
+          graphics / other multimedia, & I love scouring the internet for the
+          latest & greatest in web tech.
           {/* potential to add blog here?? */}
           <hr></hr>
           <div className="cta">
+            <span>
+              {" "}
+              Check out my <a href="#projects">projects</a>!
+            </span>
             <a className="scroll-down-button" href="#projects">
               <BsFillCaretDownFill />
             </a>
-            <span>
-              {" "}
-              Check out a few of my <a href="#projects">projects</a>!
-            </span>
           </div>
           <Links />
         </span>

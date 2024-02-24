@@ -4,7 +4,11 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 function Contact() {
   return (
     <div id="contact" className="contact-full-wrapper">
-      <h1 className="contact-title">Contact</h1>
+      <h2 className="contact-title-top">
+        Contact<hr></hr>
+      </h2>
+      <h2 className="contact-title"><hr></hr>Contact</h2>
+
       <div className="contact-links">
         <a
           className="social-link"
