@@ -4,13 +4,21 @@ import { RxHamburgerMenu } from "react-icons/rx";
 function NavBar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
+  {
+    if (mobileNavOpen === true) {
+      document.body.style.overflowY = "hidden";
+    } else {
+      document.body.style.overflowY = "initial";
+    }
+  }
+
   return (
-    <section className="navbar--wrapper">
+    <section className="navbar-wrapper">
       <nav className="navbar">
         <div className="nav-logo-left">
-          <a href="#home" className="logo">
+          <h2  className="logo">
             ES
-          </a>
+          </h2>
         </div>
         <div className="nav-items-right">
           <a href="#projects" className="projects">
@@ -23,26 +31,45 @@ function NavBar() {
             Contact
           </a>
         </div>
-        <RxHamburgerMenu
-          id="hamburger-icon"
-          className="nav-mobile-button"
-          onClick={() => setMobileNavOpen(!mobileNavOpen)}
-        />
-      </nav>
-      {/* ------------------------------------NAV MOBILE------------------------ */}
-      <div className="nav-mobile-wrapper">
-        <div
-          className={mobileNavOpen ? "nav-mobile-open" : "nav-mobile-closed"}>
-          <a href="#projects" className="projects">
-            Projects
-          </a>
-          <a href="#about" className="about">
-            About Me
-          </a>
-          <a href="#contact" className="contact">
-            Contact
-          </a>
+        <div className="hamburger-wrapper">
+          <RxHamburgerMenu
+            id="hamburger-icon"
+            onClick={() => setMobileNavOpen(!mobileNavOpen)}
+          />
         </div>
+        {/* ------------------------------------NAV MOBILE------------------------ */}
+      </nav>
+      <div
+        className={
+          mobileNavOpen
+            ? "nav-mobile-wrapper-open"
+            : "nav-mobile-wrapper-closed"
+        }>
+        <a
+          onClick={() => {
+            setMobileNavOpen(false);
+          }}
+          href="#projects">
+          Projects
+        </a>
+        <hr></hr>
+
+        <a
+          onClick={() => {
+            setMobileNavOpen(false);
+          }}
+          href="#about">
+          About Me
+        </a>
+        <hr></hr>
+
+        <a
+          onClick={() => {
+            setMobileNavOpen(false);
+          }}
+          href="#contact">
+          Contact
+        </a>
       </div>
     </section>
   );
