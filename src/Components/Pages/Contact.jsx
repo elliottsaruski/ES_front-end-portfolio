@@ -1,15 +1,15 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
+import Links from "../Links";
 
 function Contact() {
   return (
-    <div id="contact" className="contact-full-wrapper">
-      <h2 className="contact-title-top">
-        Contact<hr></hr>
+    <section id="contact" className="contact-full-wrapper">
+      <h2 className="contact-title">
+        <hr></hr>Contact
       </h2>
-      <h2 className="contact-title"><hr></hr>Contact</h2>
-
-      <div className="contact-links">
+      {/* <Links /> */}
+      {/* <div className="contact-links">
         <a
           className="social-link"
           href="https://www.linkedin.com/in/elliottsaruski/">
@@ -26,8 +26,8 @@ function Contact() {
           <FaSquareXTwitter />
           <hr className="social-link-hr"></hr>Twitter
         </a>
-      </div>
-    </div>
+      </div> */}
+    </section>
   );
 }
 
