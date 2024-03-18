@@ -183,7 +183,6 @@ main > section {
     z-index: 100;
     font-size: calc(1.5vw + 1.5vh);
     border: 2px solid var(--clr-font-accent);
-    border-top: none;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
   }
@@ -206,11 +205,7 @@ main > section {
 
   /* -----------home media Q--------------- */
 
-  .contact-links-wrapper svg,
-  img {
-    height: 2rem !important;
-    width: 2rem !important;
-  }
+
 }
 /* -----------------MEDIA Q END----------------- */
 
@@ -244,7 +239,6 @@ main > section {
   height: auto;
   justify-content: left;
   align-items: baseline;
-  gap: 0.5rem;
   position: relative;
   user-select: none;
   font-size: clamp(1rem, 10vw, 5rem);
@@ -267,6 +261,7 @@ main > section {
   line-height: 2.2rem;
   font-size: clamp(1.2rem, 2vw, 1.5rem);
   padding-top: 1rem;
+  word-spacing: 0.001rem;
 }
 
 .description a {

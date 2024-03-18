@@ -14,8 +14,9 @@ function Home() {
           a Marketer turned Front End Dev with a specialty in{" "}
           <strong>ReactJS</strong>. In my spare time I make{" "}
           <a href="https://soundcloud.com/envimusic">electronic music</a>,{" "}
-          <strong>3D graphics + multimedia</strong>. <br></br><br></br>I{"'"}m currently looking
-          to join a team of developers...(finish this)
+          <strong>3D graphics, & other multimedia</strong>.<br></br>
+          <br></br>I{"'"}m currently looking to join a team of
+          developers...(finish this)
           {/* potential to add blog here?? */}
         </span>
         <hr></hr>
