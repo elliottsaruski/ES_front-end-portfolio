@@ -3,7 +3,7 @@ import { FaSquareXTwitter } from "react-icons/fa6";
 
 function Links() {
   return (
-    <div className="contact-links-wrapper">
+    <section className="contact-links-wrapper">
       <a href="https://www.linkedin.com/in/elliottsaruski/">
         <FaLinkedin />
       </a>
@@ -13,7 +13,7 @@ function Links() {
       <a href="https://twitter.com/_envimusic">
         <FaSquareXTwitter />
       </a>
-    </div>
+    </section>
   );
 }
 
