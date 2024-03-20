@@ -23,7 +23,7 @@ function Home() {
         </span>
         <div className="ctas-wrapper">
           <a className="cta" href="#projects">
-            Check out some of my <strong>projects</strong>!
+            My <strong>projects</strong>!
           </a>
           <a className="cta CV" href="">
             CV

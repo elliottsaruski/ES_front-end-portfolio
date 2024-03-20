@@ -19,8 +19,8 @@ function About() {
       </div>
       <hr id="seperator"></hr>
       <div className="education-wrapper">
-        <h3>Education + Experience</h3>
-        <section className="education-without-titles">
+        <h3>Education</h3>
+        <section className="education-without-title">
           <div className="about-item-wrapper">
             <span>
               <h5>2020</h5>
@@ -39,9 +39,8 @@ function About() {
           <div className="about-item-wrapper">
             <span>
               <h5>2022-24</h5>
-              <h4>Codecademy</h4>
-              <p>Front-End Engineering</p>
-              <p>Certificate</p>
+              <h4>Front-End Engineering Career Path (Online course)</h4>
+              <p>Codecademy.com</p>
             </span>
           </div>
         </section>
