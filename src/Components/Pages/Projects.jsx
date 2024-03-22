@@ -1,12 +1,14 @@
 function Projects() {
   return (
     <section id="projects" className="projects-wrapper">
-      <h2 className="projects-title">
+      <h2>
         <hr></hr>Projects
       </h2>
       <div className="projects-list">
         <div className="project-card" id="project-1">
-          <canvas className="project-img"></canvas>
+          <img
+            src="https://images.unsplash.com/photo-1571330735066-03aaa9429d89?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+            className="project-img"></img>
           <div className="project-text-wrapper">
             <h3 className="project-title">Project 1</h3>
             <p className="project-stack">
@@ -26,7 +28,9 @@ function Projects() {
           </div>
         </div>
         <div className="project-card" id="project-2">
-          <canvas className="project-img"></canvas>
+            <img
+              src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?q=80&w=1469&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="project-img"></img>
           <div className="project-text-wrapper">
             <h3 className="project-title">Project 2</h3>
             <p className="project-stack">
@@ -46,7 +50,9 @@ function Projects() {
           </div>
         </div>
         <div className="project-card" id="project-3">
-          <canvas className="project-img"></canvas>
+            <img
+              src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              className="project-img"></img>
           <div className="project-text-wrapper">
             <h3 className="project-title">Project 3</h3>
             <p className="project-stack">
