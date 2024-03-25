@@ -16,13 +16,16 @@ function NavBar() {
     <section className="navbar-wrapper">
       <nav className="navbar">
         <div className="nav-logo-left">
-          <a
-            href="#home"
-            onClick={() => {
-              setMobileNavOpen(false);
-            }}>
-            <h2 className="logo">ES</h2>
-          </a>
+          <h1>
+            <a
+              className="logo"
+              href="#home"
+              onClick={() => {
+                setMobileNavOpen(false);
+              }}>
+              ES
+            </a>
+          </h1>
         </div>
         <div className="nav-items-right">
           <a href="#projects" className="projects">

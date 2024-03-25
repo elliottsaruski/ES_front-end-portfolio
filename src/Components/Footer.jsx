@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <>
-      <hr></hr>
+      {/* <hr></hr> */}
 
       <section className="footer-wrapper">
         <div className="footer-content">
