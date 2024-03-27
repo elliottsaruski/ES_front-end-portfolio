@@ -6,15 +6,16 @@ function Home() {
       <div className="home-flex-1">
         <span className="greeting">Hi there! I{"'"}m</span>
         <div className="name-wrapper">
-          <h1 className="name">ELLIOTT SARUSKI</h1>
-          <p>,</p>
+          <h1 className="name">ELLIOTT SARUSKI</h1>,
         </div>
         <span className="description">
           a Marketer turned Front-End Engineer with a specialty in{" "}
           <strong>ReactJS</strong> and an interest in creative coding. In my
           spare time I make{" "}
-          <a href="https://soundcloud.com/envimusic">electronic music</a>,{" "}
-          <strong>3D graphics</strong>, & other <strong>multimedia</strong>.
+          <a href="https://soundcloud.com/envimusic">
+            <strong>electronic music</strong>
+          </a>
+          , <strong>3D graphics</strong>, & other <strong>multimedia</strong>.
           <br></br>
           <br></br>I{"'"}m currently looking to join a team of
           developers...(finish this)

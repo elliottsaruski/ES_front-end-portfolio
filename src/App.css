@@ -44,22 +44,22 @@ body {
 
   *::-webkit-scrollbar-thumb {
     background-color: #87cefa;
-    border-radius: 10px;
+    border-radius: 0.5rem;
     border: 10px double #ffffff;
   }
 }
 
 .App {
-  font-family: "Overpass Mono", monospace;
-  font-optical-sizing: auto;
-  font-weight: 300;
-  font-style: normal;
-  font-variation-settings: "wdth" 100;
-  height: 100dvh;
+  height: 100svh;
   overflow-y: scroll;
   overflow-x: hidden;
   scroll-snap-type: y mandatory;
   background-color: var(--clr-primary-bg);
+
+  /* -------FONT-------- */
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
 
 main > section {
@@ -127,7 +127,15 @@ main > section > h2 {
   user-select: none;
   text-decoration: none;
   color: var(--clr-font-primary);
-  font-weight: 400;
+  font-weight: 600;
+  outline: 2px solid transparent;
+  padding: 1rem;
+}
+
+.nav-items-right a:hover {
+  user-select: none;
+  color: var(--clr-font-accent);
+  text-decoration: overline;
 }
 
 /* ----------------- NAV TABLET AND BELOW---------- */
@@ -152,10 +160,9 @@ main > section > h2 {
 .home-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100dvh;
+  height: 100svh;
   position: relative;
   justify-content: center;
-
   background-color: var(--clr-primary-bg);
   width: 100dvw;
 }
@@ -163,75 +170,59 @@ main > section > h2 {
 .home-flex-1 {
   display: flex;
   flex-direction: column;
-  margin: 1rem;
   width: fit-content;
-  padding-inline: 1rem;
+  margin-inline: 1rem;
 }
 
 .greeting {
-  font-size: clamp(1.5rem, 1vw, 15rem);
+  font-size: clamp(1.3rem, 5vw, 2rem);
   font-weight: 500;
   user-select: none;
   opacity: 90%;
-  letter-spacing: -0.15ch;
-  word-spacing: -0.5ch;
+  letter-spacing: 0.1ch;
+  word-spacing: -0.25ch;
+  font-style: italic;
+  opacity: 85%;
 }
 
 .name-wrapper {
   display: flex;
+  align-items: baseline;
   justify-content: left;
   user-select: none;
-  margin-bottom: 1rem;
-  width: fit-content;
-}
-
-.name-wrapper p {
-  text-shadow: none;
-  font-size: clamp(1rem, 5vw, 5rem);
-  color: var(--clr-font-primary);
-  display: flex;
-  align-items: center;
-  opacity: 85%;
-  margin-top: clamp(0.5rem, 1vw, 5rem);
-  font-weight: 300;
+  font-size: clamp(2rem, 5vw, 4rem);
 }
 
 .name {
-  font-size: clamp(2rem, 8vw, 6rem);
+  display: flex;
+  text-wrap: nowrap;
+  font-size: clamp(1.9rem, 5vw, 4rem);
   background-color: var(--clr-primary-bg);
   color: var(--clr-font-accent);
-  /* color: var(--clr-primary-bg); */
-  font-weight: 900;
+  font-weight: 800;
   text-shadow: var(--glow);
-  letter-spacing: -0.15ch;
-  word-spacing: -0.5ch;
-  /* -webkit-text-stroke: 1px var(--clr-font-accent); */
-}
-
-h1.name {
-  width: fit-content;
 }
 
 .home-wrapper hr {
-  margin-block: 1.5rem;
+  margin-block: 1rem;
   width: 90%;
 }
 
 .description {
-  max-width: 50rem;
-  min-width: 15rem;
-  opacity: 85%;
+  max-width: 32rem;
   line-height: 1.8rem;
   user-select: none;
-  font-size: clamp(1rem, 1vw, 1.2rem);
+  font-size: clamp(1rem, 5vw, 1.1rem);
+  margin-block: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--clr-secondary-bg);
 }
 
-.description a,
 .description strong {
-  text-decoration: underline;
-  text-underline-offset: 0.3rem;
-  font-weight: 800;
+  font-weight: 600;
   color: var(--clr-font-accent);
+  text-decoration: none;
 }
 
 .ctas-wrapper {
@@ -250,38 +241,107 @@ h1.name {
   display: block;
   font-weight: 600;
   padding: 0.75rem;
-  border-radius: 1rem;
+  padding-inline: 1rem;
+  border-radius: 0.5rem;
   text-decoration: none;
   text-align: center;
   font-size: clamp(0.9rem, 0.5vw, 1rem);
+  background-color: var(--clr-secondary-bg);
+  color: var(--clr-font-accent);
+  position: relative;
+  border-color: transparent;
 }
 
 .cta {
-  outline: 3px solid var(--clr-secondary-bg);
   flex: 0.75;
   width: 100%;
 }
 
 .cta strong {
   color: var(--clr-font-accent);
-  text-decoration: underline;
-  text-underline-offset: 0.5rem;
 }
 
 .cta.CV {
   flex: 0.05;
-  color: var(--clr-font-accent);
-  font-weight: 600;
-  padding-inline: 1rem;
-  text-decoration: none;
-  outline: 3px solid var(--clr-secondary-bg);
-  font-size: clamp(0.9rem, 0.5vw, 1rem);
 }
 
 .cta:hover {
-  color: var(--clr-font-primary);
-  background-color: var(--clr-font-dark);
   font-weight: 600;
+  background-color: var(--clr-primary-bg);
+  transition: all 2s ease-out;
+  box-shadow: 0px 0px 0px rgba(131, 131, 131, 0.185);
+}
+
+.cta::before,
+.CV::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 0rem;
+}
+
+.cta:hover::before,
+.CV:hover::before {
+  animation: animateBeforeBorder 0.25s ease-in-out forwards;
+}
+
+@keyframes animateBeforeBorder {
+  0% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    border-top-color: var(--clr-font-accent);
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: var(--clr-font-accent);
+  }
+}
+
+.cta::after,
+.CV::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 0;
+  height: 0;
+  background: transparent;
+  border: 2px solid transparent;
+  border-radius: 0.05rem;
+}
+
+.cta:hover::after,
+.CV:hover::after {
+  animation: animateAfterBorder 0.25s ease-in-out forwards;
+}
+
+@keyframes animateAfterBorder {
+  0% {
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.25rem;
+    border-top-color: transparent;
+    border-right-color: var(--clr-font-accent);
+    border-bottom-color: var(--clr-font-accent);
+    border-left-color: transparent;
+  }
 }
 
 .contact-links-wrapper {
@@ -299,8 +359,7 @@ h1.name {
   align-items: center;
   color: var(--clr-font-accent);
   padding: 0.5rem;
-  border-radius: 0.75rem;
-  outline: 3px solid var(--clr-secondary-bg);
+  border-radius: 0.5rem;
 }
 
 .contact-links-wrapper a:hover,
@@ -320,7 +379,7 @@ h1.name {
 .projects-wrapper {
   display: flex;
   flex-direction: column;
-  height: 100dvh;
+  height: 100svh;
   position: relative;
   justify-content: center;
   background-color: var(--clr-primary-bg);
@@ -348,7 +407,7 @@ h1.name {
   grid-template: "projectOne projectTwo projectThree";
   width: 85dvw;
   gap: 3rem;
-  height: 80dvh;
+  height: 80svh;
   overflow: hidden;
   align-content: center;
   justify-content: center;
@@ -357,19 +416,19 @@ h1.name {
 
 .project-card {
   font-size: clamp(0.9rem, 0.5vw, 3rem);
-  outline: 3px solid var(--clr-secondary-bg);
   padding: 2rem;
   min-height: fit-content;
   /* gap: 2rem; */
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   display: flex;
   flex-direction: column;
+  background: var(--clr-secondary-bg);
 }
 
 .project-card img {
   height: 100%;
   width: 100%;
-  border-radius: 1rem;
+  border-radius: 0.5rem;
   object-fit: cover;
 }
 
@@ -387,6 +446,9 @@ h1.name {
   font-weight: 500;
 }
 
+.project-description {
+  display: flex;
+}
 .project-link-wrapper {
   display: flex;
   height: 100%;
@@ -409,79 +471,70 @@ h1.name {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+  height: 100svh;
   text-align: center;
   background-color: var(--clr-primary-bg);
   position: relative;
   overflow: hidden;
 }
 
-.about-inner-wrapper {
-  display: flex;
-  height: 85dvh;
-  width: 90dvw;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.about-left {
-  display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  border-right: 3px solid var(--clr-secondary-bg);
-  flex: 1;
-  padding-right: 2rem;
+.about-left-inner {
+  display: grid;
+  grid-template:
+    "headshot description"
+    "headshot education"
+    "languages languages"
+    "tools libraries";
+  text-align: left;
+  text-wrap: pretty;
+  font-size: clamp(0.85rem, 1vw, 0.89rem);
+  line-height: 2.5ch;
+  gap: 2rem;
 }
 
 .headshot-img {
   display: flex;
   object-fit: contain;
-  height: 15rem;
+  height: 20rem;
   margin: 0 auto;
-  border-radius: 1rem;
-  outline: 3px solid var(--clr-font-accent);
-  outline-offset: 0.5rem;
+  border-radius: 0.5rem;
+  border: 3px solid var(--clr-font-accent);
+  grid-area: headshot;
 }
 
 .about-span {
-  text-align: start;
-  text-wrap: pretty;
-  font-size: clamp(0.85rem, 1vw, 1rem);
-  line-height: 2.5ch;
+  max-width: 25rem;
+  min-width: 15rem;
+  background: var(--clr-secondary-bg);
+  border-radius: 0.5rem;
+  height: min-content;
+  padding: 1rem;
+  grid-area: description;
 }
 
 .about-span::first-letter {
-  font-size: xxx-large;
+  font-size: xx-large;
 }
 
 .education-wrapper {
   display: flex;
-  flex-grow: 1;
-  flex-direction: column;
-  gap: 1rem;
+  border-radius: 0.5rem;
+  background: var(--clr-secondary-bg);
+  text-align: left;
   width: 100%;
-}
-
-.education-wrapper h3 {
-  text-decoration: underline;
-  text-underline-offset: 1ch;
+  gap: 1rem;
+  padding: 1rem;
+  grid-area: education;
 }
 
 .education {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  font-weight: 300;
+  display: grid;
+  gap: 1rem;
 }
 
 .blue-text {
   color: var(--clr-font-accent);
   font-weight: 800;
-}
-
-.education-item {
-  text-align: left;
 }
 
 .education-time-frame {
@@ -490,15 +543,27 @@ h1.name {
 
 .skills-wrapper {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex: 3;
   gap: 1rem;
+}
+
+#languages {
+  grid-area: languages;
+  min-height: 25svh;
+}
+
+#libraries {
+  grid-area: libraries;
+  min-height: 25svh;
+}
+
+#tools {
+  grid-area: tools;
+  min-height: 25svh;
 }
 
 .skills-card {
   display: flex;
+  background: var(--clr-secondary-bg);
   flex-direction: column;
   list-style: none;
   height: fit-content;
@@ -506,6 +571,7 @@ h1.name {
   gap: 1rem;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  max-width: 25rem;
   ul {
     display: flex;
     flex-wrap: wrap;
@@ -528,10 +594,6 @@ h1.name {
   }
 }
 
-.skills-card ul {
-  display: flex;
-}
-
 /* -----------------CONTACT----------------- */
 
 .contact-full-wrapper {
@@ -539,7 +601,7 @@ h1.name {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100dvh;
+  height: 100svh;
   text-align: center;
   min-width: 240px;
   width: 100dvw;
@@ -554,7 +616,7 @@ h1.name {
   justify-content: center;
   position: unset;
   gap: 1.3rem;
-  max-height: 80dvh;
+  max-height: 80svh;
   a {
     height: 5rem;
     aspect-ratio: 1;
@@ -566,7 +628,7 @@ h1.name {
 /* -----------------FOOTER----------------- */
 
 .footer-wrapper {
-  height: 10dvh;
+  height: 10svh;
   display: flex;
   width: 100vw;
   align-items: center;
@@ -598,7 +660,7 @@ h1.name {
       "projectTwo"
       "projectThree";
     gap: 0;
-    max-height: 80dvh;
+    max-height: 80svh;
   }
 
   .project-card {
@@ -607,7 +669,7 @@ h1.name {
     scale: 0.8;
     gap: 2rem;
     height: auto;
-    min-height: calc(80dvh / 3);
+    min-height: calc(80svh / 3);
     min-width: 100dvw;
     align-items: center;
     justify-content: center;
@@ -632,7 +694,7 @@ h1.name {
   }
   /* ----------------- ABOUT---------- */
 
-  .about-inner-wrapper {
+  /* .about-inner-wrapper {
     flex-direction: column;
 
     hr {
@@ -648,6 +710,10 @@ h1.name {
     flex: 0;
   }
 
+  .about-span {
+    min-width: 20rem;
+  }
+
   .skills-wrapper {
     margin: 0;
     padding: 0;
@@ -657,7 +723,7 @@ h1.name {
 
   .skills-wrapper ul {
     flex-direction: row;
-  }
+  } */
 }
 
 /* -----------------MOBILE---------- */
@@ -701,7 +767,7 @@ h1.name {
     position: fixed;
     flex-direction: column;
     width: 100dvw;
-    height: 100dvh;
+    height: 100svh;
     justify-content: center;
     align-items: center;
     backdrop-filter: blur(50px);
@@ -748,7 +814,7 @@ h1.name {
 
   .project-card {
     min-width: 100dvw;
-    max-height: calc(85dvh / 3);
+    max-height: calc(85svh / 3);
     outline: 5px solid var(--clr-secondary-bg);
     overflow: hidden;
     width: 100%;

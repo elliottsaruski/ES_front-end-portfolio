@@ -6,7 +6,7 @@ function About() {
       </h2>
 
       <div className="about-inner-wrapper">
-        <div className="about-left">
+        <div className="about-left-inner">
           <img
             src="/src/assets/es-headshot.jpg"
             alt="elliott headshot"
@@ -21,13 +21,13 @@ function About() {
           </span>
           <div className="education-wrapper">
             <h3>Education</h3>
+            <hr></hr>
             <div className="education">
               <div className="education-item" id="coding">
                 <h5 className="education-time-frame">2022-24</h5>
                 <p className="blue-text">Front-End Engineering Career Path</p>
                 <p>Codecademy.com</p>
               </div>
-              <hr></hr>
               <div className="education-item" id="marketing">
                 <h5 className="education-time-frame">2020</h5>
                 <p className="blue-text">B.S. Marketing</p>
@@ -40,6 +40,7 @@ function About() {
         <div className="skills-wrapper">
           <div className="skills-card" id="languages">
             <h3>Programming Languages</h3>
+            <hr></hr>
             <ul>
               <li>JavaScript (ES6+)</li>
               <li>HTML</li>
@@ -48,6 +49,7 @@ function About() {
           </div>
           <div className="skills-card" id="libraries">
             <h3>Libraries & Frameworks</h3>
+            <hr></hr>
             <ul>
               <li>ReactJS</li>
               <li>Vite</li>
@@ -60,10 +62,10 @@ function About() {
           </div>
           <div className="skills-card" id="tools">
             <h3>Tools & Platforms</h3>
+            <hr></hr>
             <ul>
               <li>Git + Github</li>
               <li>Netlify</li>
-              {/* <li>Firebase / Docker</li> */}
               <li>Webpack</li>
               <li>Lighthouse</li>
               <li>Figma</li>
