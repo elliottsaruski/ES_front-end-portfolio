@@ -471,31 +471,31 @@ main > section > h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100svh;
   text-align: center;
   background-color: var(--clr-primary-bg);
   position: relative;
   overflow: hidden;
+  height: 100svh;
 }
 
-.about-left-inner {
+.about-top {
   display: grid;
   grid-template:
     "headshot description"
-    "headshot education"
-    "languages languages"
-    "tools libraries";
+    "headshot education";
   text-align: left;
+  gap: 1rem;
   text-wrap: pretty;
   font-size: clamp(0.85rem, 1vw, 0.89rem);
   line-height: 2.5ch;
-  gap: 2rem;
+  align-items: center;
+  place-content: center;
 }
 
 .headshot-img {
   display: flex;
   object-fit: contain;
-  height: 20rem;
+  height: 21.2rem;
   margin: 0 auto;
   border-radius: 0.5rem;
   border: 3px solid var(--clr-font-accent);
@@ -503,12 +503,12 @@ main > section > h2 {
 }
 
 .about-span {
-  max-width: 25rem;
+  max-width: 30rem;
   min-width: 15rem;
   background: var(--clr-secondary-bg);
   border-radius: 0.5rem;
   height: min-content;
-  padding: 1rem;
+  padding: 1.2rem;
   grid-area: description;
 }
 
@@ -521,9 +521,8 @@ main > section > h2 {
   border-radius: 0.5rem;
   background: var(--clr-secondary-bg);
   text-align: left;
-  width: 100%;
   gap: 1rem;
-  padding: 1rem;
+  padding: 1.2rem;
   grid-area: education;
 }
 
@@ -542,23 +541,40 @@ main > section > h2 {
 }
 
 .skills-wrapper {
-  display: flex;
+  padding: 2rem;
+  display: grid;
   gap: 1rem;
+  grid-template:
+    "languages languages "
+    "libraries tools";
+  place-content: center;
+  place-items: center;
 }
 
 #languages {
   grid-area: languages;
-  min-height: 25svh;
+  width: max-content;
+  ul {
+    display: grid;
+  }
 }
 
 #libraries {
   grid-area: libraries;
-  min-height: 25svh;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-justify: center;
+  }
 }
 
 #tools {
   grid-area: tools;
-  min-height: 25svh;
+  ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-justify: center;
+  }
 }
 
 .skills-card {
@@ -566,31 +582,26 @@ main > section > h2 {
   background: var(--clr-secondary-bg);
   flex-direction: column;
   list-style: none;
-  height: fit-content;
-  width: max-content;
-  gap: 1rem;
-  padding: 0.5rem;
   border-radius: 0.5rem;
-  max-width: 25rem;
+  padding-inline: 1rem;
   ul {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     gap: 1rem;
+    padding-block: 1rem;
   }
   li {
-    border: 3px solid var(--clr-secondary-bg);
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 1rem;
     border-radius: 0.5rem;
+    border: 1px solid var(--clr-font-accent);
+    background-color: var(--clr-primary-bg);
   }
   h3 {
     color: var(--clr-font-accent);
     font-size: large;
+    padding-block: 1rem;
   }
 }
 

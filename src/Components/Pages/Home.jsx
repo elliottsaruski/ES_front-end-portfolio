@@ -20,8 +20,8 @@ function Home() {
           <br></br>I{"'"}m currently looking to join a team of
           developers...(finish this)
           {/* potential to add blog here?? */}
-          <hr></hr>
         </span>
+          <hr></hr>
         <div className="ctas-wrapper">
           <a className="cta" href="#projects">
             My <strong>projects</strong>!

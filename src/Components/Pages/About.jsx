@@ -6,7 +6,7 @@ function About() {
       </h2>
 
       <div className="about-inner-wrapper">
-        <div className="about-left-inner">
+        <div className="about-top">
           <img
             src="/src/assets/es-headshot.jpg"
             alt="elliott headshot"
@@ -57,7 +57,6 @@ function About() {
               <li>Framer Motion</li>
               <li>p5.js</li>
               <li>Tone.js</li>
-              <li>Web Audio API</li>
             </ul>
           </div>
           <div className="skills-card" id="tools">
