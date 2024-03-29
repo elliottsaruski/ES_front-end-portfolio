@@ -4,24 +4,19 @@ function Home() {
   return (
     <section id="home" className="home-wrapper">
       <div className="home-flex-1">
-        <span className="greeting">Hi there! I{"'"}m</span>
+        <span className="greeting">Hi! I{"'"}m</span>
         <div className="name-wrapper">
           <h1 className="name">ELLIOTT SARUSKI</h1>,
         </div>
+        <div className="name-titles">
+          <h2>Front-End Engineer</h2>
+          <h2>Marketer</h2>
+          <h2>Creative</h2>
+        </div>
         <span className="description">
-          a Marketer turned Front-End Engineer with a specialty in{" "}
-          <strong>ReactJS</strong> and an interest in creative coding. In my
-          spare time I make{" "}
-          <a href="https://soundcloud.com/envimusic">
-            <strong>electronic music</strong>
-          </a>
-          , <strong>3D graphics</strong>, & other <strong>multimedia</strong>.
-          <br></br>
-          <br></br>I{"'"}m currently looking to join a team of
-          developers...(finish this)
-          {/* potential to add blog here?? */}
+          Looking to join a team of developers...
         </span>
-          <hr></hr>
+        <hr></hr>
         <div className="ctas-wrapper">
           <a className="cta" href="#projects">
             My <strong>projects</strong>!

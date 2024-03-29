@@ -6,12 +6,15 @@ function Links() {
     <section className="contact-links-wrapper">
       <a href="https://www.linkedin.com/in/elliottsaruski/">
         <FaLinkedin />
+        <p>LinkedIn</p>
       </a>
       <a href="https://github.com/elliottsaruski">
         <FaGithub />
+        <p>Github</p>
       </a>
       <a href="https://twitter.com/_envimusic">
         <FaSquareXTwitter />
+        <p>Twitter</p>
       </a>
     </section>
   );

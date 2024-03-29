@@ -1,4 +1,5 @@
 import Links from "../Links";
+import { IoShareSocialOutline } from "react-icons/io5";
 
 function Contact() {
   return (
@@ -6,7 +7,11 @@ function Contact() {
       <h2>
         <hr></hr>Contact
       </h2>
-      <Links />
+      <div className="contact-inner-wrapper">
+        <IoShareSocialOutline id="connect-icon" />
+        <hr></hr>
+        <Links />
+      </div>
     </section>
   );
 }
