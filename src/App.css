@@ -20,8 +20,8 @@
   /* --glow: 0px 0px 6px #87cefa; */
 
   --clr-primary-bg: #0e0e0e;
-  --clr-secondary-bg: #2a2a2a88;
-  --clr-bg-accent: #474747;
+  --clr-secondary-bg: #202020c4;
+  --clr-bg-accent: hsla(0, 0%, 12%, 0.61);
 
   --clr-font-primary: #fafaff;
   /* --clr-font-accent: #1fa5f2; */
@@ -177,7 +177,6 @@ main > section > h2 {
   flex-wrap: wrap-reverse;
   height: 100svh;
   position: relative;
-  background-color: var(--clr-primary-bg);
   width: 100dvw;
   align-items: center;
   justify-content: center;
@@ -186,15 +185,13 @@ main > section > h2 {
 .home-flex-1 {
   display: grid;
   flex: 1;
-  /* margin: auto; */
-  /* align-items: left; */
   place-content: center;
   padding-inline: 2rem;
 }
 
 .home-flex-2 {
   height: 100dvh;
-  flex: 1;
+  flex: 2;
   grid-area: home2;
   display: grid;
   /* place-content: center; */
@@ -236,7 +233,7 @@ main > section > h2 {
   display: flex;
   gap: 0.5rem;
   justify-content: center;
-  background-color: var(--clr-secondary-bg);
+  border: 2px solid var(--clr-bg-accent);
   padding: 0.5rem;
   align-items: center;
   font-size: clamp(1rem, 3vw, 2rem);
@@ -253,7 +250,7 @@ main > section > h2 {
 
 .home-wrapper hr {
   margin-block: 1rem;
-  width: 90%;
+  color: var(--clr-font-accent);
 }
 
 .description {
@@ -264,7 +261,6 @@ main > section > h2 {
   margin-block: 0.5rem;
   padding-right: 0.5rem;
   border-radius: 0.5rem;
-  /* background-color: var(--clr-secondary-bg); */
 }
 
 .description strong {
@@ -407,7 +403,6 @@ main > section > h2 {
 
 .home-wrapper .contact-links-wrapper a {
   display: flex;
-  background-color: var(--clr-primary-bg);
   align-items: center;
   color: var(--clr-font-accent);
   padding: 0.5rem;
@@ -418,19 +413,12 @@ main > section > h2 {
 .home-wrapper .contact-links-wrapper a:focus {
   background-color: var(--clr-font-accent);
   color: var(--clr-primary-bg);
-  font-weight: 900;
 }
 
 .home-wrapper .contact-links-wrapper svg {
   width: 2rem;
   height: 2rem;
 }
-
-/* #canvas {
-  user-select: none;
-  background-color: var(--clr-secondary-bg);
-  padding-inline: 2.5rem;
-} */
 
 /* -----------------PROJECTS----------------- */
 
@@ -440,7 +428,6 @@ main > section > h2 {
   height: 100svh;
   position: relative;
   justify-content: center;
-  background-color: var(--clr-primary-bg);
   width: 100dvw;
 }
 
@@ -475,7 +462,7 @@ main > section > h2 {
 .project-card {
   font-size: clamp(0.9rem, 0.5vw, 3rem);
   min-height: fit-content;
-  /* gap: 2rem; */
+  max-width: 30rem;
   display: flex;
   flex-direction: column;
 }
@@ -495,6 +482,8 @@ main > section > h2 {
   padding-block: 1rem;
   gap: 0.4rem;
   background: var(--clr-secondary-bg);
+  border: 3px solid var(--clr-bg-accent);
+
   padding-inline: 1rem;
   flex: 2;
   border-radius: 0 0 0.5rem 0.5rem;
@@ -508,6 +497,7 @@ main > section > h2 {
 
 .project-description {
   display: flex;
+  max-width: 25rem;
 }
 .project-link-wrapper {
   display: flex;
@@ -528,69 +518,45 @@ main > section > h2 {
 
 /* -----------------ABOUT----------------- */
 .about-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  background-color: var(--clr-primary-bg);
   position: relative;
   height: 100dvh;
 }
 
 .about-inner-wrapper {
   display: grid;
-  grid-template:
-    "headshot languages"
-    "description libraries"
-    "education tools";
-  text-align: left;
-  gap: 1rem;
-  text-wrap: pretty;
-  font-size: clamp(0.85rem, 1vw, 0.89rem);
-  line-height: 2.5ch;
+  height: fit-content;
   align-items: center;
-  justify-content: center;
-  /* place-items: center; */
+  place-content: center;
+  place-items: center;
+  margin: 0 auto;
+  width: 85svw;
 }
 
 .headshot-img {
   display: flex;
   object-fit: contain;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  justify-items: center;
   height: 15rem;
-  margin: 0 auto;
   border-radius: 0.5rem;
-  border: 3px solid var(--clr-font-accent);
-  grid-area: headshot;
+  border: 3px solid var(--clr-secondary-bg);
 }
 
 .about-span {
-  max-width: 25rem;
-  min-width: 15rem;
-  background: var(--clr-secondary-bg);
   border-radius: 0.5rem;
-  padding: 1.2rem;
-  grid-area: description;
-  line-height: 3ch;
-}
-
-.about-span::first-letter {
-  font-size: xx-large;
+  border: 2px solid var(--clr-bg-accent);
 }
 
 .education-wrapper {
-  display: flex;
+  display: grid;
   border-radius: 0.5rem;
-  background: var(--clr-secondary-bg);
-  text-align: left;
-  gap: 1rem;
-  padding: 1.2rem;
-  grid-area: education;
-  max-width: 25rem;
-  min-width: 15rem;
+  border: 2px solid var(--clr-bg-accent);
 }
 
 .education {
-  display: grid;
+  display: flex;
   gap: 0.5rem;
 }
 
@@ -603,22 +569,12 @@ main > section > h2 {
   opacity: 75%;
 }
 
-#languages {
-  grid-area: languages;
-}
-
-#libraries {
-  grid-area: libraries;
-}
-
-#tools {
-  grid-area: tools;
-}
-
 .skills-card {
-  display: flex;
-  background: var(--clr-secondary-bg);
+  display: grid;
+  border: 2px solid var(--clr-bg-accent);
+  /* background: var(--clr-secondary-bg); */
   list-style: none;
+  background: transparent;
   border-radius: 0.5rem;
   padding: 1rem;
   align-items: center;
@@ -629,24 +585,27 @@ main > section > h2 {
   display: flex;
   color: var(--clr-font-accent);
   font-size: large;
-  border-right: 2px solid var(--clr-font-accent);
   padding-right: 1rem;
+}
+
+.skills-card li:first-child {
+  color: var(--clr-font-accent);
 }
 
 .skills-items ul {
   display: flex;
   gap: 1rem;
-  align-content: center;
 }
 
 .skills-items li {
-  background: rgba(0, 0, 0, 0.247);
-  border: 2px solid var(--clr-primary-bg);
+  border: 2px solid var(--clr-bg-accent);
+  background: var(--clr-secondary-bg);
   display: grid;
   gap: 0.25rem;
   place-items: center;
   padding: 0.5rem;
   border-radius: 0.5rem;
+  width: 10rem;
 }
 
 /* -----------------CONTACT----------------- */
@@ -656,7 +615,6 @@ main > section > h2 {
   justify-content: center;
   align-items: center;
   height: 100svh;
-  background-color: var(--clr-primary-bg);
   position: relative;
   overflow: hidden;
 }
@@ -863,6 +821,7 @@ main > section > h2 {
     padding: 0;
     height: calc(85svh / 3);
     border-radius: 0.5rem;
+    max-width: 100svw;
   }
 
   .project-card .project-title {

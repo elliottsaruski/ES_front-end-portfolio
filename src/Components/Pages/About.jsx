@@ -39,7 +39,7 @@ function About() {
         </span>
         <div className="education-wrapper">
           <h3>Education</h3>
-          <hr></hr>
+          {/* <hr></hr> */}
           <div className="education">
             <div className="education-item" id="coding">
               <h5 className="education-time-frame">2022-24</h5>

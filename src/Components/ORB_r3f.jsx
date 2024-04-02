@@ -1,13 +1,12 @@
 import { useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { Trail } from "@react-three/drei";
+import { GradientTexture } from "@react-three/drei";
 
 export default function ORB() {
   return (
     <Canvas id="canvas">
+      <pointLight />
       <SPHERE />
-      <spotLight intensity={15} decay={10} position={[-10, 10, 0]}></spotLight>
-      <hemisphereLight intensity={0.1} position={[10, 0, 0]}></hemisphereLight>
     </Canvas>
   );
 }
@@ -18,22 +17,16 @@ function SPHERE() {
   useFrame(({ clock }) => {
     const a = clock.getElapsedTime();
     myMesh.current.rotation.y = a / 2;
-    myMesh.current.rotation.x = a / 2;
+    myMesh.current.rotation.x = a;
+    myMesh.current.rotation.z = a / 10;
   });
 
   return (
     <mesh ref={myMesh}>
-      <Trail></Trail>
-
-      <sphereGeometry args={[1.5, 1, 0]} />
-
-      <meshStandardMaterial
-        wireframe
-        color="white"
-        metalness={50}
-        roughness={0}
-        alphaHash={true}
-      />
+      <sphereGeometry />
+      <meshBasicMaterial>
+        <GradientTexture stops={[0, 1]} colors={["#06b9e6", "#000000"]} />
+      </meshBasicMaterial>
     </mesh>
   );
 }
