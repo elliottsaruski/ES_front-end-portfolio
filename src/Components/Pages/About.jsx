@@ -18,37 +18,44 @@ function About() {
       <h2>About</h2>
       <div className="about-inner-wrapper">
         <div className="about-description-wrapper">
-          <div className="about-text-plus-headshot">
-            <img
-              src="/src/assets/es-headshot.jpg"
-              alt="elliott headshot"
-              className="headshot-img"
-            />
+          <img
+            src="/src/assets/es-headshot.jpg"
+            alt="elliott headshot"
+            className="headshot-img"
+          />
+          <div className="text-and-edu">
             <span className="about-span">
-              a Marketer turned Front-End Engineer with a specialty in{" "}
-              <strong>ReactJS</strong> and an interest in creative coding. In my
-              spare time I make{" "}
+              Hiya! My name is Elliott {"("}2 L's, 2 T's{")"} Saruski {"("}
+              <em>sa-roo-ski</em> {")"}. A Marketer turned Front-End Engineer -
+              based in Miami, FL - with a specialty in <strong>ReactJS</strong>{" "}
+              and an interest in everything and anything creative. In my spare
+              time I make{" "}
               <a href="https://soundcloud.com/envimusic">
                 <strong>electronic music</strong>
               </a>
               , <strong>3D graphics</strong>, & other{" "}
               <strong>multimedia</strong>.<br></br>
-              <br></br>I{"'"}m currently looking to join a team of
-              developers...(finish this)
+              <br></br>I{"'"}m currently looking to join a team of developers
+              who would find benefit from my keen eye for detail and endless
+              desire for learning. Ideally, I would like to incorporate my deep
+              passion for music technology with the development of interactive
+              digital experiences, from DAWS, VSTs, and Web Audio Applications
+              to musician / producer focused products or services.
             </span>
-          </div>
-          <div className="education-wrapper">
-            <h3>Education</h3>
-            <div className="education">
-              <div className="education-item" id="coding">
-                <h5 className="education-time-frame">2022-24</h5>
-                <p className="blue-text">Front-End Engineering Career Path</p>
-                <p>Codecademy.com</p>
-              </div>
-              <div className="education-item" id="marketing">
-                <h5 className="education-time-frame">2020</h5>
-                <p className="blue-text">B.S. Marketing</p>
-                <p>Florida State University</p>
+            <hr></hr>
+            <div className="education-wrapper">
+              <h3>Education</h3>
+              <div className="education">
+                <div className="education-item" id="coding">
+                  <h5 className="education-time-frame">2022-24</h5>
+                  <p className="blue-text">Front-End Engineer Career Path</p>
+                  <p>Codecademy.com</p>
+                </div>
+                <div className="education-item" id="marketing">
+                  <h5 className="education-time-frame">2020</h5>
+                  <p className="blue-text">B.S. Marketing</p>
+                  <p>Florida State University</p>
+                </div>
               </div>
             </div>
           </div>
