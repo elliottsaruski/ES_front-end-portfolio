@@ -25,11 +25,11 @@ function About() {
           />
           <div className="text-and-edu">
             <span className="about-span">
-              Hiya! My name is Elliott {"("}2 L's, 2 T's{")"} Saruski {"("}
-              <em>sa-roo-ski</em> {")"}. A Marketer turned Front-End Engineer -
-              based in Miami, FL - with a specialty in <strong>ReactJS</strong>{" "}
-              and an interest in everything and anything creative. In my spare
-              time I make{" "}
+              Hiya! My name is Elliott {"("}2 L{"'"}s, 2 T{"'"}s{")"} Saruski{" "}
+              {"("}
+              <em>sa-roo-ski</em> {")"}, a Marketer turned Front-End Engineer -
+              based in Miami, FL - with a specialty in <strong>ReactJS.</strong>{" "}
+              In my spare time I make{" "}
               <a href="https://soundcloud.com/envimusic">
                 <strong>electronic music</strong>
               </a>
@@ -64,6 +64,7 @@ function About() {
         <div className="skills-wrapper">
           <div className="skills-card" id="languages">
             <h3>Programming Languages</h3>
+
             <div className="skills-items">
               <ul>
                 <li>
@@ -82,7 +83,7 @@ function About() {
             </div>
           </div>
           <div className="skills-card" id="libraries">
-            <h3>Libraries & Frameworks</h3>
+            <h3>Libraries & Frameworks</h3>{" "}
             <div className="skills-items">
               <ul>
                 <li>
