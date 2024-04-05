@@ -1,16 +1,4 @@
-import { IoLogoJavascript } from "react-icons/io5";
-import { FaHtml5, FaReact, FaNodeJs, FaGitAlt, FaFigma } from "react-icons/fa";
-import { FaCss3Alt } from "react-icons/fa6";
-import {
-  SiVite,
-  SiRedux,
-  SiP5Dotjs,
-  SiLighthouse,
-  SiNetlify,
-  SiAdobecreativecloud,
-} from "react-icons/si";
-import { TbBrandFramerMotion } from "react-icons/tb";
-import { CgMusicSpeaker } from "react-icons/cg";
+import { GoLinkExternal } from "react-icons/go";
 
 function About() {
   return (
@@ -21,8 +9,8 @@ function About() {
           <img
             src="/src/assets/es-headshot.jpg"
             alt="elliott headshot"
-            className="headshot-img"
-          />
+            className="headshot-img"></img>
+
           <div className="text-and-edu">
             <span className="about-span">
               Hiya! My name is Elliott {"("}2 L{"'"}s, 2 T{"'"}s{")"} Saruski{" "}
@@ -47,104 +35,37 @@ function About() {
               <h3>Education</h3>
               <div className="education">
                 <div className="education-item" id="coding">
-                  <h5 className="education-time-frame">2022-24</h5>
-                  <p className="blue-text">Front-End Engineer Career Path</p>
+                  <h5 className="education-time-frame">2022-23</h5>
+                  <p className="education-type">
+                    Front-End Engineer Career Path
+                  </p>
                   <p>Codecademy.com</p>
                 </div>
                 <div className="education-item" id="marketing">
                   <h5 className="education-time-frame">2020</h5>
-                  <p className="blue-text">B.S. Marketing</p>
+                  <p className="education-type">B.S. Marketing</p>
                   <p>Florida State University</p>
                 </div>
+              </div>
+            </div>
+            <div className="skills-wrapper">
+              <h3>Skills</h3>
+              <div className="skills-card">
+                <ul>
+                  <li>HTML</li>-<li>CSS3</li>-<li>JavaScript (ES6+)</li>-
+                  <li>ReactJS</li>-<li>Vite</li>-<li>Node.js</li>
+                  <li>Redux</li>-<li>Git</li>-<li>Netlify</li>-
+                  <li>Lighthouse</li>-<li>Figma</li>-<li>Framer Motion</li>
+                  <li>Tone.js</li>-<li>Web Audio API</li>
+                </ul>
               </div>
             </div>
           </div>
         </div>
         {/* ------------------------------------------------------------------- */}
-        <div className="skills-wrapper">
-          <div className="skills-card" id="languages">
-            <h3>Programming Languages</h3>
-
-            <div className="skills-items">
-              <ul>
-                <li>
-                  <IoLogoJavascript />
-                  <p className="skill-item-text">JavaScript (ES6+)</p>
-                </li>
-                <li>
-                  <FaHtml5 />
-                  <p className="skill-item-text">HTML</p>
-                </li>
-                <li>
-                  <FaCss3Alt />
-                  <p className="skill-item-text">CSS</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="skills-card" id="libraries">
-            <h3>Libraries & Frameworks</h3>{" "}
-            <div className="skills-items">
-              <ul>
-                <li>
-                  <FaReact />
-                  <p className="skill-item-text">ReactJS</p>
-                </li>
-                <li>
-                  <SiVite />
-                  <p className="skill-item-text">Vite</p>
-                </li>
-                <li>
-                  <SiRedux />
-                  <p className="skill-item-text">Redux</p>
-                </li>
-                <li>
-                  <TbBrandFramerMotion />
-                  <p className="skill-item-text">Framer Motion</p>
-                </li>
-                <li>
-                  <SiP5Dotjs />
-                  <p className="skill-item-text">p5.js</p>
-                </li>
-                <li>
-                  <CgMusicSpeaker />
-                  <p className="skill-item-text">Tone.js</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div className="skills-card" id="tools">
-            <h3>Tools & Platforms</h3>
-            <div className="skills-items">
-              <ul>
-                <li>
-                  <FaNodeJs />
-                  <p className="skill-item-text">Node.js</p>
-                </li>
-                <li>
-                  <FaGitAlt />
-                  <p className="skill-item-text">Git</p>
-                </li>
-                <li>
-                  <SiNetlify />
-                  <p className="skill-item-text">Netlify</p>
-                </li>
-                <li>
-                  <SiLighthouse />
-                  <p className="skill-item-text">Lighthouse</p>
-                </li>
-                <li>
-                  <FaFigma />
-                  <p className="skill-item-text">Figma</p>
-                </li>
-                <li>
-                  <SiAdobecreativecloud />
-                  <p className="skill-item-text">Adobe CC</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        <button className="view-more-projects-button">
+          <p>Resume</p> <GoLinkExternal id="link-to-more-projects-icon" />
+        </button>
       </div>
     </section>
   );

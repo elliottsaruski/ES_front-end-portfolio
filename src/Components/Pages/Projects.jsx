@@ -70,16 +70,15 @@ function Projects() {
               <a>code</a>
               <a>more info</a>
             </div>
-            {/* ADD THE EXTRA DROPDOWN DESC HERE UPON CLICK */}
           </div>
         </div>
       </div>
-      <a
-        id="view-more-projects-button"
-        href="https://github.com/elliottsaruski">
+      <button
+        className="view-more-projects-button"
+        href="https://github.com/elliottsbuttonruski">
         <p>View all projects</p>
         <GoLinkExternal id="link-to-more-projects-icon" />
-      </a>
+      </button>
     </section>
   );
 }

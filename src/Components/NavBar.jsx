@@ -38,10 +38,10 @@ function NavBar() {
           <a href="#contact" className="contact">
             Contact
           </a>
-          <a className="CV">
+          <button className="CV">
             <p>CV</p>
             <IoDownload id="download-icon" />
-          </a>
+          </button>
         </div>
         <div className="hamburger-wrapper">
           <RxHamburgerMenu
