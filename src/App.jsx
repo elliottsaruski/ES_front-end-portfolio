@@ -14,9 +14,13 @@ function App() {
     <main className="App">
       <NavBar />
       <Home />
+      <hr></hr>
       <Projects />
+      <hr></hr>
       <About />
+      <hr></hr>
       <Contact />
+      <hr></hr>
       <Footer />
     </main>
   );

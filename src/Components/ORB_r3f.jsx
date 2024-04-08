@@ -16,15 +16,15 @@ function SPHERE() {
 
   useFrame(({ clock }) => {
     const a = clock.getElapsedTime();
-    myMesh.current.rotation.y = a / 100;
-    myMesh.current.rotation.x = a / 100;
-    myMesh.current.rotation.z = a / 100;
+    myMesh.current.rotation.y = a / 10;
+    myMesh.current.rotation.x = a / 10;
+    myMesh.current.rotation.z = a / 10;
   });
 
   return (
     <mesh ref={myMesh}>
-      <sphereGeometry args={[5, 5, 5, 5]} />
-      <meshBasicMaterial wireframe>
+      <sphereGeometry args={[1, 1, 5, 5]} />
+      <meshBasicMaterial wireframe >
         <GradientTexture stops={[0, 1]} colors={["#06b9e6", "#000000"]} />
       </meshBasicMaterial>
     </mesh>
