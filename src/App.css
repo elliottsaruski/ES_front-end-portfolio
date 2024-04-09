@@ -55,11 +55,13 @@
   font-style: normal;
 }
 
-main > section > h2 {
-  font-size: clamp(1rem, 10vw, 5rem);
+section > h2 {
+  font-size: clamp(1rem, 10vw, 2rem);
   pointer-events: none;
   user-select: none;
   color: var(--clr-font-primary);
+  padding-bottom: 5rem;
+  font-size: xxx-large;
 }
 
 hr {
@@ -70,7 +72,7 @@ hr {
 .navbar {
   display: flex;
   width: 100dvw;
-  z-index: 100000;
+  z-index: 100000000;
   position: fixed;
   font-optical-sizing: auto;
   font-weight: 900;
@@ -283,67 +285,68 @@ hr {
 
 /* -----------------PROJECTS----------------- */
 
-#project-1 {
-  img {
-    filter: hue-rotate(180deg);
-  }
-}
-
 .projects-wrapper {
   display: flex;
   flex-direction: column;
   padding-block: 5rem;
-  h2 {
-    margin: 0 auto;
-  }
+  max-width: 50rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
 }
 
 .projects-list {
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  flex-wrap: wrap;
-  width: 90dvw;
-  margin: 0 auto;
-  justify-content: center;
-  padding-block: 5rem;
+  display: grid;
+  gap: 10rem;
 }
 
 .project-card {
-  font-size: clamp(1rem, 0.75vw, 1.3rem);
-  display: grid;
-  width: min-content;
-
+  font-size: clamp(1rem, 0.75vw, 1.1rem);
+  display: flex;
+  gap: 10rem;
   hr {
     margin-block: 0.5rem;
   }
   img {
     object-fit: cover;
-    height: 20rem;
+    display: flex;
+    height: 30rem;
   }
 }
 
+.project-img {
+  flex: 1;
+}
+
 .project-text-wrapper {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* .project-text-wrapper {
   display: flex;
   flex-direction: column;
   background: var(--clr-bg-accent);
   backdrop-filter: blur(15px);
-  padding: 3rem;
-  max-width: 40rem;
+  padding: 2rem;
+  max-height: 30rem;
 
   h3 {
     color: var(--clr-font-accent);
     font-size: xx-large;
     font-weight: 700;
   }
-}
-.project-stack {
+} */
+/* .project-stack {
   padding-block: 1rem;
 }
 .project-description {
   display: flex;
-  line-height: 1.5rem;
-}
+  line-height: 1.6rem;
+  height: 10rem;
+} */
 
 .project-link-wrapper {
   display: flex;
@@ -352,8 +355,10 @@ hr {
   font-size: large;
   font-weight: 500;
   padding-block: 1rem;
+
   a {
     text-align: center;
+    min-width: max-content;
     color: var(--clr-font-primary);
     background-color: var(--clr-secondary-bg);
     padding: 0.5rem 1rem;
@@ -413,11 +418,9 @@ hr {
   display: flex;
   flex-direction: column;
   padding-block: 5rem;
-
-  h2 {
-    margin: 0 auto;
-    padding-bottom: 5rem;
-  }
+  max-width: 50rem;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .about-inner-wrapper {
@@ -427,28 +430,14 @@ hr {
   gap: 5rem;
 }
 
-.about-description-wrapper {
+.img-and-about {
   display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-  justify-content: center;
+  gap: 5rem;
 }
 
 .headshot-img {
-  display: flex;
-  object-fit: cover;
-  position: relative;
+  width: 20rem;
   border-radius: 0.5rem;
-  flex-shrink: 1;
-  flex-grow: 0;
-}
-
-.text-and-edu {
-  display: flex;
-  flex-direction: column;
-  max-width: 40rem;
-  justify-content: space-around;
-  gap: 2rem;
 }
 
 .about-span {
@@ -458,18 +447,29 @@ hr {
 }
 
 .education-wrapper {
-  display: grid;
-  gap: 1rem;
+  display: flex;
+  gap: 2rem;
 }
 
-.education {
+.education-skills {
   display: flex;
+  flex-direction: column;
   gap: 5rem;
 }
 
 .education-wrapper h3 {
   font-size: clamp(1.7rem, 5vw, 2rem);
   color: var(--clr-font-accent);
+}
+
+.education {
+  display: flex;
+  gap: 5rem;
+  border: 2px solid var(--clr-secondary-bg);
+  padding: 1rem;
+  width: 100%;
+  border-radius: 1rem;
+  background: var(--clr-secondary-bg);
 }
 
 .education-type {
@@ -482,27 +482,26 @@ hr {
 
 .skills-wrapper {
   display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
+  gap: 2rem;
   h3 {
     font-size: clamp(1.7rem, 5vw, 2rem);
     color: var(--clr-font-accent);
+    flex: 2;
   }
 }
 
 .skills-card {
-  display: grid;
-  font-size: clamp(1rem, 1vw, 1.1rem);
+  display: flex;
+  border: 2px solid var(--clr-secondary-bg);
+  padding: 1rem;
+  border-radius: 1rem;
+  background: var(--clr-secondary-bg);
 
   ul {
     display: flex;
     list-style: none;
     flex-wrap: wrap;
-    gap: 1rem;
-  }
-  li {
-    width: max-content;
+    gap: 0.5rem;
   }
 }
 
