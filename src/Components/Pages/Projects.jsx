@@ -13,12 +13,11 @@ function Projects() {
             <hr></hr>
             <p className="project-stack">
               <strong>Stack: </strong>
-              <em>ReactJS, Vite, Node.JS, Netlify, wavesurfer.js, File API</em>
+              <em>ReactJS, Vite, Node.JS, wavesurfer.js, File API</em>
             </p>
             <span className="project-description">
-              Transform the speed and pitch of an uploaded audio file with a
-              visual feedback in the form of a radial dial to adjust the speed,
-              and a drawn waveform capable of being scrubbed through.
+              Transform the speed of an uploaded audio file. HRS also works as a
+              standalone audio player with an interactive waveform scrubber.
             </span>
             <div className="project-link-wrapper">
               <a>demo</a>
@@ -39,11 +38,34 @@ function Projects() {
               <em>ReactJS, Node.JS...</em>
             </p>
             <span className="project-description">
-              consectetur adipisicing elit. Atque sequi cupiditate repellat
-              inventore ratione. Sint, aspernatur velit mollitia perspiciatis
+              Web Design, branding and custom web audio player made for popular
+              Shoegaze artist, Max Fry.
             </span>
             <div className="project-link-wrapper">
-              <a>demo</a>
+              <a>website</a>
+              <a>code</a>
+              <a>more info</a>
+            </div>
+          </div>
+        </div>
+        <div className="project-card" id="project-3">
+          <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+
+          <div className="project-text-wrapper">
+            <h3>
+              <strong>Artist Website:</strong> XCOPE
+            </h3>
+            <hr></hr>
+            <p className="project-stack">
+              <strong>Stack: </strong>
+              <em>ReactJS, Node.JS...</em>
+            </p>
+            <span className="project-description">
+              Web Design, branding, and custom web audio player made for
+              electronic producer, XCOPE.
+            </span>
+            <div className="project-link-wrapper">
+              <a>website</a>
               <a>code</a>
               <a>more info</a>
             </div>
@@ -62,11 +84,11 @@ function Projects() {
               <em>ReactJS, Node.JS...</em>
             </p>
             <span className="project-description">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque
-              sequi cupiditate repellat inventore ratione. Sint, aspernatur
+              Web Design, branding, and custom web audio player made for my
+              personal electronic music and visual production project, envi.
             </span>
             <div className="project-link-wrapper">
-              <a>demo</a>
+              <a>website</a>
               <a>code</a>
               <a>more info</a>
             </div>

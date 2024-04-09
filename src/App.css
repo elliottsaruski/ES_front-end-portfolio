@@ -55,7 +55,6 @@
   font-style: normal;
 }
 
-
 main > section > h2 {
   font-size: clamp(1rem, 10vw, 5rem);
   pointer-events: none;
@@ -301,21 +300,26 @@ hr {
 
 .projects-list {
   display: flex;
-  padding: 5rem;
-  gap: 5rem;
+  flex-direction: row;
+  gap: 2rem;
+  flex-wrap: wrap;
+  width: 90dvw;
   margin: 0 auto;
+  justify-content: center;
+  padding-block: 5rem;
 }
 
 .project-card {
   font-size: clamp(1rem, 0.75vw, 1.3rem);
-  display: flex;
+  display: grid;
+  width: min-content;
+
   hr {
     margin-block: 0.5rem;
   }
   img {
     object-fit: cover;
-    height: 35rem;
-    width: 35rem;
+    height: 20rem;
   }
 }
 
@@ -325,7 +329,7 @@ hr {
   background: var(--clr-bg-accent);
   backdrop-filter: blur(15px);
   padding: 3rem;
-  max-width: 35rem;
+  max-width: 40rem;
 
   h3 {
     color: var(--clr-font-accent);
