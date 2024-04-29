@@ -6,7 +6,7 @@ function Home() {
     <section id="home" className="home-wrapper">
       <div className="home-centered-content">
         <h1 className="name">ELLIOTT SARUSKI</h1>
-        <h4 className="name-titles">Front-End Engineer. Marketer. Creator.</h4>
+        <h4 className="name-titles">Front-End Engineer</h4>
         <hr id="seperator"></hr>
         <a className="cta" href="#projects">
           View my work
