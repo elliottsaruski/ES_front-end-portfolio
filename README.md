@@ -1,3 +1,5 @@
+-----OUTDATED PORTFOLIO REPO-------- one of several iterations
+
 Welcome to my personal dev portfolio!
 
 Currently interested in work! Looking to join a team of likeminded developers building something cool!
