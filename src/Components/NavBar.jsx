@@ -1,6 +1,5 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
-import { IoDownload } from "react-icons/io5";
 
 function NavBar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -14,7 +13,7 @@ function NavBar() {
   }
 
   return (
-    <section className="navbar-wrapper">
+    <div className="navbar-wrapper">
       <nav className="navbar">
         <div className="nav-logo-left">
           <h1>
@@ -38,10 +37,7 @@ function NavBar() {
           <a href="#contact" className="contact">
             Contact
           </a>
-          <button className="CV">
-            <p>CV</p>
-            <IoDownload id="download-icon" />
-          </button>
+
         </div>
         <div className="hamburger-wrapper">
           <RxHamburgerMenu
@@ -83,7 +79,7 @@ function NavBar() {
           Contact
         </a>
       </div>
-    </section>
+    </div>
   );
 }
 

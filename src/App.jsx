@@ -14,13 +14,12 @@ function App() {
     <main className="App">
       <NavBar />
       <Home />
-      <hr></hr>
+      {/* <hr></hr> */}
       <Projects />
-      <hr></hr>
+      {/* <hr></hr> */}
       <About />
-      <hr></hr>
       <Contact />
-      <hr></hr>
+      {/* <hr></hr> */}
       <Footer />
     </main>
   );

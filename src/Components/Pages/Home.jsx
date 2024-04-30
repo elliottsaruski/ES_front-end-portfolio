@@ -1,4 +1,4 @@
-import Links from "../Links";
+// import Links from "../Links";
 // import ORB from "../ORB_r3f";
 
 function Home() {
@@ -6,13 +6,18 @@ function Home() {
     <section id="home" className="home-wrapper">
       <div className="home-centered-content">
         <h1 className="name">ELLIOTT SARUSKI</h1>
-        <h4 className="name-titles">Front-End Engineer</h4>
+        <div className="titles-wrapper">
+          <p className="name-titles">Front-End Engineer</p>
+          <p className="name-titles">Creative Dev </p>
+          <p className="name-titles">Digital Marketer </p>
+        </div>
+
         <hr id="seperator"></hr>
         <a className="cta" href="#projects">
           View my work
         </a>
       </div>
-      <Links />
+      {/* <Links /> */}
       {/* <div className="BG">
         <ORB id="canvas" />
       </div> */}

@@ -2,6 +2,8 @@
 import { FaReact } from "react-icons/fa";
 import { SiVite } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa6";
+import { IoDownload } from "react-icons/io5";
+import { GoLinkExternal } from "react-icons/go";
 
 function About() {
   return (
@@ -11,17 +13,6 @@ function About() {
       <div className="about-inner-wrapper">
         <div className="about-top">
           <div className="about-col-top-left">
-            <img
-              src="/src/assets/es-headshot.jpg"
-              alt="elliott headshot"
-              className="headshot-img"
-            />
-            {/* <button className="view-more-projects-button RESUME">
-            <p>Resume</p> <GoLinkExternal id="link-to-more-projects-icon" />
-          </button> */}
-          </div>
-
-          <div className="about-col-top-right">
             <span className="about-span">
               Hiya! My name is Elliott {"("}2 L{"'"}s, 2 T{"'"}s{")"} Saruski{" "}
               {"("}
@@ -39,34 +30,51 @@ function About() {
               for learning. Ideally, I would like to incorporate my deep passion
               for music technology with the development of interactive digital
               experiences, from DAWS, VSTs, and Web Audio Applications to
-              musician / producer focused products or services.{" "}
+              musician / producer focused products or services.
             </span>
-            <hr />
+            {/* <hr /> */}
+
             <div className="education-wrapper">
               <h3>Education</h3>
               <div className="education">
                 <ul className="education-item" id="coding">
-                  <li className="education-time-frame">2022-23</li>
                   <li className="education-type">
                     Front-End Engineer Career Path
                   </li>
-                  <li className="education-name"> Codecademy.com</li>
+                  <li className="education-name"> Codecademy.com, 2022-2023</li>
                 </ul>
                 <ul className="education-item" id="marketing">
-                  <li className="education-time-frame">2020</li>
                   <li className="education-type">
                     Bachelor of Science in Marketing
                   </li>
-                  <li className="education-name">Florida State University</li>
+                  <li className="education-name">
+                    Florida State University, 2020
+                  </li>
                 </ul>
               </div>
             </div>
+            <div className="about-resume-cv-wrapper">
+              <button className="CV">
+                <p>CV</p>
+                <IoDownload id="download-icon" />
+              </button>
+              <button className="view-more-projects-button RESUME">
+                <p>Resume</p> <GoLinkExternal id="link-to-more-projects-icon" />
+              </button>
+            </div>
+          </div>
+          <div className="about-col-top-right">
+            <img
+              src="/src/assets/es-headshot.jpg"
+              alt="elliott headshot"
+              className="headshot-img"
+            />
           </div>
         </div>
-        <hr />
+
         <div className="about-bottom">
-          <h3>Stack</h3>
           <div className="stack-specialty">
+            <h3>Stack</h3>
             <ul>
               <li>
                 <FaReact className="stack-icon" />
@@ -82,26 +90,29 @@ function About() {
               </li>
             </ul>
           </div>
-          <hr />
+
           <div className="other-skills">
             <div className="skill">
               <h3>Languages</h3>
               <ul className="other-skills-list">
                 <li>HTML</li>
                 <li>CSS3</li>
-                <li>JavaScript (ES6+)</li>
+                <li>JavaScript</li>
               </ul>
             </div>
+            {/* <hr /> */}
             <div className="skill">
-              <h3>Other Frameworks / Libraries</h3>
+              <h3>Other Libraries</h3>
               <ul className="other-skills-list">
                 <li>Framer Motion</li>
-                <li>Tone.js</li>
-                <li>Web Audio API</li>
+                <li>Tonejs</li>
+                <li>Web Audio</li>
+                <li>p5js</li>
               </ul>
             </div>
+            {/* <hr /> */}
             <div className="skill">
-              <h3>Tools / Software</h3>
+              <h3>Tools + Software</h3>
               <ul className="other-skills-list">
                 <li>Figma</li>
                 <li>Adobe CC</li>
