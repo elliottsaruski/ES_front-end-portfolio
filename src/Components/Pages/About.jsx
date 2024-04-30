@@ -12,28 +12,12 @@ function About() {
 
       <div className="about-inner-wrapper">
         <div className="about-top">
-          <div className="about-col-top-left">
-            <span className="about-span">
-              Hiya! My name is Elliott {"("}2 L{"'"}s, 2 T{"'"}s{")"} Saruski{" "}
-              {"("}
-              <em>sa-roo-ski</em> {")"}, a Marketer turned Front-End Engineer -
-              based in Miami, FL - with a specialty in <strong>ReactJS.</strong>{" "}
-              In my spare time I make{" "}
-              <a href="https://soundcloud.com/envimusic">
-                <strong>electronic music</strong>
-              </a>
-              , <strong>3D graphics</strong>, & other{" "}
-              <strong>multimedia</strong>.
-              <br />
-              <br />I{"'"}m currently looking to join a team of developers who
-              would find benefit from my keen eye for detail and endless desire
-              for learning. Ideally, I would like to incorporate my deep passion
-              for music technology with the development of interactive digital
-              experiences, from DAWS, VSTs, and Web Audio Applications to
-              musician / producer focused products or services.
-            </span>
-            {/* <hr /> */}
-
+          <div className="about-col-top-right">
+            <img
+              src="/src/assets/es-headshot.jpg"
+              alt="elliott headshot"
+              className="headshot-img"
+            />
             <div className="education-wrapper">
               <h3>Education</h3>
               <div className="education">
@@ -63,65 +47,78 @@ function About() {
               </button>
             </div>
           </div>
-          <div className="about-col-top-right">
-            <img
-              src="/src/assets/es-headshot.jpg"
-              alt="elliott headshot"
-              className="headshot-img"
-            />
+          <div className="about-col-top-left">
+            <span className="about-span">
+              Hiya! My name is Elliott {"("}2 L{"'"}s, 2 T{"'"}s{")"} Saruski{" "}
+              {"("}
+              <em>sa-roo-ski</em> {")"}, a Marketer turned Front-End Engineer -
+              based in Miami, FL - with a specialty in <strong>ReactJS.</strong>{" "}
+              In my spare time I make{" "}
+              <a href="https://soundcloud.com/envimusic">
+                <strong>electronic music</strong>
+              </a>
+              , <strong>3D graphics</strong>, & other{" "}
+              <strong>multimedia</strong>.
+              <br />
+              <br />I{"'"}m currently looking to join a team of developers who
+              would find benefit from my keen eye for detail and endless desire
+              for learning. Ideally, I would like to incorporate my deep passion
+              for music technology with the development of interactive digital
+              experiences, from DAWS, VSTs, and Web Audio Applications to
+              musician / producer focused products or services.
+            </span>
+
+            <div className="stack-specialty">
+              <h3>Stack</h3>
+              <ul>
+                <li>
+                  <FaReact className="stack-icon" />
+                  <p>React.js</p>
+                </li>
+                <li>
+                  <SiVite className="stack-icon" />
+                  <p>Vite</p>
+                </li>
+                <li>
+                  <FaNodeJs className="stack-icon" />
+                  <p>Node.js</p>
+                </li>
+              </ul>
+            </div>
+
+            <div className="other-skills">
+              <div className="skill">
+                <h3>Languages</h3>
+                <ul className="other-skills-list">
+                  <li>HTML</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                </ul>
+              </div>
+              {/* <hr /> */}
+              <div className="skill">
+                <h3>Other Libraries</h3>
+                <ul className="other-skills-list">
+                  <li>Framer Motion</li>
+                  <li>Tonejs</li>
+                  <li>Web Audio</li>
+                  <li>p5js</li>
+                </ul>
+              </div>
+              {/* <hr /> */}
+              <div className="skill">
+                <h3>Tools + Software</h3>
+                <ul className="other-skills-list">
+                  <li>Figma</li>
+                  <li>Adobe CC</li>
+                  <li>Ableton Live</li>
+                  <li>Blender 3D</li>
+                </ul>
+              </div>
+            </div>
           </div>
         </div>
-
-        <div className="about-bottom">
-          <div className="stack-specialty">
-            <h3>Stack</h3>
-            <ul>
-              <li>
-                <FaReact className="stack-icon" />
-                <p>React.js</p>
-              </li>
-              <li>
-                <SiVite className="stack-icon" />
-                <p>Vite</p>
-              </li>
-              <li>
-                <FaNodeJs className="stack-icon" />
-                <p>Node.js</p>
-              </li>
-            </ul>
-          </div>
-
-          <div className="other-skills">
-            <div className="skill">
-              <h3>Languages</h3>
-              <ul className="other-skills-list">
-                <li>HTML</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
-            {/* <hr /> */}
-            <div className="skill">
-              <h3>Other Libraries</h3>
-              <ul className="other-skills-list">
-                <li>Framer Motion</li>
-                <li>Tonejs</li>
-                <li>Web Audio</li>
-                <li>p5js</li>
-              </ul>
-            </div>
-            {/* <hr /> */}
-            <div className="skill">
-              <h3>Tools + Software</h3>
-              <ul className="other-skills-list">
-                <li>Figma</li>
-                <li>Adobe CC</li>
-                <li>Ableton Live</li>
-                <li>Blender 3D</li>
-              </ul>
-            </div>
-          </div>
-        </div>
+        {/* <hr /> */}{" "}
       </div>
     </section>
   );
