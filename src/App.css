@@ -294,6 +294,7 @@ h2 {
 
 .project-description {
   display: flex;
+  /* flex: auto; */
   /* max-width: 35rem; */
   /* height: 100%; */
 }
@@ -307,6 +308,9 @@ h2 {
 .project-description {
   display: flex;
   /* flex: 1; */
+  flex-grow: 1;
+  flex: 1;
+  /* height: max-content; */
 }
 
 .project-link-wrapper {
@@ -475,13 +479,6 @@ h2 {
 
 /*----------------------------- STACK----------------------------- */
 
-.about-bottom {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  gap: 3rem;
-}
-
 .stack-specialty {
   display: flex;
   /* gap: 0.5rem; */
@@ -515,9 +512,9 @@ h2 {
 .other-skills {
   display: flex;
   /* flex-direction: column; */
-  /* justify-content: space-between; */
+  justify-content: space-between;
   /* gap: 10rem; */
-  gap: 7rem;
+  /* gap: 7rem; */
   /* justify-content: space-between; */
 }
 

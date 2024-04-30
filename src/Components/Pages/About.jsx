@@ -18,6 +18,7 @@ function About() {
               alt="elliott headshot"
               className="headshot-img"
             />
+            <hr />
             <div className="education-wrapper">
               <h3>Education</h3>
               <div className="education">
@@ -37,6 +38,8 @@ function About() {
                 </ul>
               </div>
             </div>
+            <hr />
+
             <div className="about-resume-cv-wrapper">
               <button className="CV">
                 <p>CV</p>
@@ -68,6 +71,7 @@ function About() {
               musician / producer focused products or services.
             </span>
 
+            <hr />
             <div className="stack-specialty">
               <h3>Stack</h3>
               <ul>
@@ -85,7 +89,7 @@ function About() {
                 </li>
               </ul>
             </div>
-
+            <hr />
             <div className="other-skills">
               <div className="skill">
                 <h3>Languages</h3>
@@ -118,7 +122,6 @@ function About() {
             </div>
           </div>
         </div>
-        {/* <hr /> */}{" "}
       </div>
     </section>
   );
