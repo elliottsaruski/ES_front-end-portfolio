@@ -2,7 +2,7 @@
 import { FaReact } from "react-icons/fa";
 import { SiVite } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa6";
-import { IoDownload } from "react-icons/io5";
+// import { IoDownload } from "react-icons/io5";
 import { GoLinkExternal } from "react-icons/go";
 
 import ES_headshot from "../../assets/ES_headshot.jpg";
@@ -20,10 +20,10 @@ function About() {
               className="headshot-img"
             />
             <div className="about-resume-cv-wrapper">
-              <button className="CV">
+              {/* <button className="CV">
                 <p>CV</p>
                 <IoDownload id="download-icon" />
-              </button>
+              </button> */}
               <button className="view-more-projects-button RESUME">
                 <p>Resume</p> <GoLinkExternal id="link-to-more-projects-icon" />
               </button>
@@ -104,7 +104,7 @@ function About() {
                   <li>CSS3</li>
                   <li>JavaScript</li>
                   <li>C++ (learning)</li>
-                  <li>React Typescript (learning)</li>
+                  <li>Typescript (learning)</li>
                 </ul>
               </div>
               <div className="skill">

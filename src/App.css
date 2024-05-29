@@ -23,13 +23,13 @@
 
 * {
   scrollbar-width: thin;
-  scrollbar-color: var(--clr-font-accent) var(--clr-secondary-bg);
+  scrollbar-color: var(--clr-font-accent) transparent;
 }
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
   scrollbar-width: thin;
-  scrollbar-color: var(--clr-font-accent) var(--clr-secondary-bg);
+  scrollbar-color: var(--clr-font-accent) transparent;
 }
 
 *::-webkit-scrollbar-track {
@@ -330,8 +330,6 @@ h2 {
 
 .view-more-projects-button {
   display: flex;
-  /* font-size: clamp(0.85rem, 5vw, 1rem); */
-  /* margin: 0 auto; */
   position: relative;
   outline: 1px solid var(--clr-font-accent);
   position: relative;
@@ -344,8 +342,8 @@ h2 {
   text-decoration: none;
   color: var(--clr-font-accent);
   border: none;
+  flex: 1;
   background: transparent;
-  /* margin: 5rem auto; */
 }
 
 #link-to-more-projects-icon {
@@ -378,15 +376,36 @@ h2 {
   display: flex;
   height: 5dvh;
   background-color: var(--clr-bg-accent-2);
-  font-size: 2rem;
+  /* font-size: 2rem; */
+  font-size: clamp(1.5rem, 1vw, 2.5rem);
+
+  /* MARKER */
   overflow: hidden;
   align-items: center;
   justify-content: center;
   line-height: 1;
-  padding-block: 5rem;
+  padding: 4rem;
+  /* margin-block: 2rem; */
+  /* margin: 2rem; */
+
   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    word-break: keep-all;
     color: var(--clr-font-primary);
     text-decoration: none;
+    gap: 1ch;
+    em {
+      text-decoration: underline;
+    }
+    em:focus,
+    em:hover {
+      text-decoration: none;
+      background-color: var(--clr-font-accent);
+      color: var(--clr-primary-bg);
+    }
   }
 }
 /* -----------------ABOUT----------------- */
@@ -395,7 +414,10 @@ h2 {
   flex-direction: column;
   align-items: center;
   padding-block: 5rem;
+  /* padding-inline: 10rem; */
   gap: 5rem;
+  /* width: 90%; */
+  /* flex-basis: 95dvw; */
   h4 {
     font-size: 0.85rem;
     opacity: 55%;
@@ -446,7 +468,11 @@ h2 {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  flex: 1;
+  button {
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem;
+  }
 }
 
 .about-span {
@@ -464,10 +490,10 @@ h2 {
 
 .education {
   display: flex;
-  flex-direction: column;
   gap: 0.5rem;
   text-align: center;
   flex-wrap: wrap;
+  padding-top: 0.5rem;
 
   ul {
     list-style: none;
@@ -505,19 +531,26 @@ h2 {
 
 .stack-specialty ul {
   display: flex;
-  gap: 0.5rem;
+  /* gap: 1rem; */
+  /* align-items: center; */
+  align-content: center;
+  /* justify-content: start; */
+  padding-top: 0.5rem;
 }
 
 .stack-specialty li {
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   gap: 0.5rem;
-  /* place-content: center; */
   place-items: center;
-  background-color: var(--clr-bg-accent-2);
-  padding: 0.4rem 2rem;
-  border-radius: 0.25rem;
-  flex: 1;
+  /* padding: 0.4rem 1rem; */
+  /* border-radius: 0.25rem; */
+  flex: 0.4;
+
+  /* padding-block: 0.5rem; */
+  p {
+    opacity: 85%;
+  }
 }
 
 .stack-icon {
@@ -536,12 +569,14 @@ h2 {
 
 .other-skills {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: start;
-  flex: 1;
+  /* flex: 0.5; */
+  gap: 5rem;
   ul {
     display: flex;
     flex-direction: column;
+    padding-block: 0.5rem;
   }
   li {
     list-style: none;
@@ -555,7 +590,7 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5rem;
+  gap: 3rem;
   padding-block: 5rem;
   background-color: var(--clr-primary-bg);
 }

@@ -19,8 +19,9 @@ function Projects() {
               <em>ReactJS, Vite, Node.JS, wavesurfer.js, File API</em>
             </p>
             <span className="project-description">
-              Transform the speed of an uploaded audio file. HRS also works as a
-              standalone audio player with an interactive waveform scrubber.
+              Web App that allows users to adjust speed and pitch of uploaded
+              audio file. Responsive interface includes a radial knob to adjust
+              speed and a traversable visual audio waveform.
             </span>
             <div className="project-link-wrapper">
               <a href="https://hrs-app.netlify.app/" target="_blank">
@@ -95,12 +96,13 @@ function Projects() {
           </div>
         </div>
       </div>
-      <button
+      <a
         className="view-more-projects-button"
-        href="https://github.com/elliottsbuttonruski">
+        href="https://github.com/elliottsaruski"
+        target="_blank">
         <p>View all projects</p>
         <GoLinkExternal id="link-to-more-projects-icon" />
-      </button>
+      </a>
     </section>
   );
 }

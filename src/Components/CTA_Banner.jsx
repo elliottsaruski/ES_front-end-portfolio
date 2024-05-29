@@ -4,9 +4,10 @@ function CTA_Banner() {
   return (
     <div id="CTA_Banner">
       <a href="#contact">
-        Want to learn more about these projects? Let{"'"}s connect!
+        Want to learn more about these projects? <br />
+        <em> Let{"'"}s connect!</em>
+        <TiArrowRight />
       </a>
-      <TiArrowRight />
     </div>
   );
 }
