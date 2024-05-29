@@ -8,6 +8,7 @@ import About from "./Components/Pages/About";
 
 import "./App.css";
 import Footer from "./Components/Footer";
+import CTA_Banner from "./Components/CTA_Banner";
 
 function App() {
   return (
@@ -16,10 +17,10 @@ function App() {
       <Home />
       {/* <hr></hr> */}
       <Projects />
+      <CTA_Banner />
       {/* <hr></hr> */}
       <About />
       <Contact />
-      {/* <hr></hr> */}
       <Footer />
     </main>
   );

@@ -8,7 +8,7 @@ function Home() {
         <h1 className="name">ELLIOTT SARUSKI</h1>
         <div className="titles-wrapper">
           <p className="name-titles">Front-End Engineer</p>
-          <p className="name-titles">Creative Dev </p>
+          <p className="name-titles">Creative Developer </p>
           <p className="name-titles">Digital Marketer </p>
         </div>
 
