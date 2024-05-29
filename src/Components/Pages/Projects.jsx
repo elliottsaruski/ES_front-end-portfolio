@@ -2,6 +2,7 @@ import { GoLinkExternal } from "react-icons/go";
 
 import SON_image from "../../assets/projects/SON_screenshot.png";
 import HRS_image from "../../assets/projects/HRS_screenshot.png";
+import ENVI_image from "../../assets/projects/ENVI_screenshot.png";
 
 function Projects() {
   return (
@@ -67,10 +68,7 @@ function Projects() {
         </div>
 
         <div className="project-card" id="project-4">
-          <img
-            className="project-img"
-            src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-          />
+          <img className="project-img" src={ENVI_image} />
           <div className="project-text-wrapper">
             <h3>
               <strong>Artist Website:</strong> envi
