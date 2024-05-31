@@ -1,6 +1,3 @@
-// import Links from "../Links";
-// import ORB from "../ORB_r3f";
-
 function Home() {
   return (
     <section id="home" className="home-wrapper">

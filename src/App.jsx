@@ -1,8 +1,8 @@
 import NavBar from "./Components/NavBar";
-import Home from "./Components/Pages/Home";
-import Projects from "./Components/Pages/Projects";
-import Contact from "./Components/Pages/Contact";
-import About from "./Components/Pages/About";
+import Home from "./Pages/Home";
+import Projects from "./Pages/Projects";
+import Contact from "./Pages/Contact";
+import About from "./Pages/About";
 
 // import { motion } from "framer-motion"
 
@@ -15,10 +15,8 @@ function App() {
     <main className="App">
       <NavBar />
       <Home />
-      {/* <hr></hr> */}
       <Projects />
       <CTA_Banner />
-      {/* <hr></hr> */}
       <About />
       <Contact />
       <Footer />

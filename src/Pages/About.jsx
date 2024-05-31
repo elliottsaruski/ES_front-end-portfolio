@@ -5,7 +5,7 @@ import { FaNodeJs } from "react-icons/fa6";
 // import { IoDownload } from "react-icons/io5";
 import { GoLinkExternal } from "react-icons/go";
 
-import ES_headshot from "../../assets/ES_headshot.jpg";
+import ES_headshot from "../assets/ES_headshot.jpg";
 
 function About() {
   return (
@@ -20,10 +20,6 @@ function About() {
               className="headshot-img"
             />
             <div className="about-resume-cv-wrapper">
-              {/* <button className="CV">
-                <p>CV</p>
-                <IoDownload id="download-icon" />
-              </button> */}
               <button className="view-more-projects-button RESUME">
                 <p>Resume</p> <GoLinkExternal id="link-to-more-projects-icon" />
               </button>
@@ -64,7 +60,6 @@ function About() {
                       Front-End Engineer Career Path
                     </li>
                     <li className="education-name">
-                      {" "}
                       Codecademy.com, 2022-2023
                     </li>
                   </ul>
