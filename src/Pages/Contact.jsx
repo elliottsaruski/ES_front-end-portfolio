@@ -1,4 +1,4 @@
-import Links from "../Components/Links";
+import Links from "../Components/Contact-components/Links";
 
 function Contact() {
   return (

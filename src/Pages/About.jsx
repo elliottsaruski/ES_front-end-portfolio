@@ -32,24 +32,30 @@ function About() {
               <em>sa-roo-ski</em> {")"}, a Marketer turned Front-End Engineer -
               based in Miami, FL - with a specialty in <strong>ReactJS.</strong>{" "}
               In my spare time I make{" "}
-              <a href="https://soundcloud.com/envimusic">
-                <strong>electronic music</strong>
+              <a href="https://soundcloud.com/envimusic" target="_blank">
+                electronic music
               </a>
-              , <strong>3D graphics</strong>, & other{" "}
-              <strong>multimedia</strong>.
+              ,{" "}
+              <a href="https://envimusic.netlify.app" target="_blank">
+                3D graphics, & other multimedia.
+              </a>
               <br />
               <br />I{"'"}m currently looking to join a team of developers who
               would find benefit from my keen eye for detail and endless desire
-              for learning. Ideally, I would like to incorporate my deep passion
-              for music technology with the development of interactive digital
+              for learning. <br />
+              <br /> Ideally, I would like to incorporate my deep passion for
+              music technology with the development of interactive digital
               experiences, from DAWS, VSTs, and Web Audio Applications to
               musician / producer focused products or services.
               <br />
               <br />
-              Anyone can learn to code, but not everyone can code [themselves]
-              to WANT to learn. I am eager to be brought onto a team to provide
-              my skills while simultaneously being rewarded with opportunities
-              to learn.
+              <em className="blockQuote">
+                {`"`}
+                {
+                  "Anyone can learn to code, but not everyone can code [themselves] a passion and desire to never stop learning."
+                }
+                {`"`}
+              </em>
             </span>
             <div className="education-and-stack">
               <div className="education-wrapper">

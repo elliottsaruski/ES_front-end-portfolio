@@ -37,7 +37,6 @@ function NavBar() {
           <a href="#contact" className="contact">
             Contact
           </a>
-
         </div>
         <div className="hamburger-wrapper">
           <RxHamburgerMenu
@@ -47,43 +46,43 @@ function NavBar() {
         </div>
         {/* ------------------------------------NAV MOBILE------------------------ */}
       </nav>
+
       <div
         className={
           mobileNavOpen
             ? "nav-mobile-wrapper-open"
             : "nav-mobile-wrapper-closed"
         }>
-        <a
-          onClick={() => {
-            setMobileNavOpen(false);
-          }}
-          href="#projects">
-          Projects
-        </a>
-        <hr></hr>
+        <nav>
+          <a
+            onClick={() => {
+              setMobileNavOpen(false);
+            }}
+            href="#projects">
+            Projects
+          </a>
+          <hr></hr>
 
-        <a
-          onClick={() => {
-            setMobileNavOpen(false);
-          }}
-          href="#about">
-          About Me
-        </a>
-        <hr></hr>
+          <a
+            onClick={() => {
+              setMobileNavOpen(false);
+            }}
+            href="#about">
+            About Me
+          </a>
+          <hr></hr>
 
-        <a
-          onClick={() => {
-            setMobileNavOpen(false);
-          }}
-          href="#contact">
-          Contact
-        </a>
+          <a
+            onClick={() => {
+              setMobileNavOpen(false);
+            }}
+            href="#contact">
+            Contact
+          </a>
+        </nav>
       </div>
     </div>
   );
 }
 
 export default NavBar;
-
-// make nav disappear when scrolling down
-//bring nav back in when scrolling up further than x-amount

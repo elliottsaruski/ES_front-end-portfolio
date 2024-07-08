@@ -16,7 +16,7 @@
   --clr-bg-accent-2: hsla(0, 0%, 18%, 0.363);
 
   --clr-font-primary: hsla(0, 0%, 83%, 0.904);
-  --clr-font-accent: #06b9e6;
+  --clr-font-accent: #83b8c5;
 }
 
 /* -----------------scrollbar----------------- */
@@ -59,19 +59,25 @@ h2 {
   font-size: xxx-large;
 }
 
+section {
+  max-width: 100%;
+}
+
 /* -----------------NAVBAR----------------- */
 
 .navbar {
   display: flex;
-  width: 100dvw;
+  width: 100vw;
   z-index: 100000000;
   position: fixed;
   font-optical-sizing: auto;
   font-weight: 900;
   padding-inline: 1rem;
-  align-items: center;
   justify-content: space-between;
-  font-size: clamp(1.25rem, 0.5vw, 1.5rem);
+  font-size: clamp(1.15rem, 0.25vw, 1.3rem);
+  height: auto;
+  align-items: baseline;
+  line-height: 1;
 }
 
 .nav-logo-left {
@@ -174,31 +180,45 @@ h2 {
   justify-content: center;
   align-items: center;
   height: 70svh;
-  width: 100dvw;
-  padding-block: 5rem;
+  width: 100vw;
   background-color: var(--clr-secondary-bg);
+  .contact-links-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    svg {
+      height: 2rem;
+      width: 2rem;
+      color: var(--clr-font-accent);
+    }
+    p {
+      display: none;
+    }
+  }
+}
+
+.home-centered-content {
+  display: grid;
+  place-content: center;
+  gap: 1rem;
 }
 
 .name {
   display: grid;
-  font-size: clamp(2rem, 5vw, 7rem);
+  font-size: clamp(2rem, 10vw, 7rem);
   color: var(--clr-font-accent);
   font-weight: 700;
   text-align: center;
+  line-height: 1;
 }
 
 .name-titles {
-  display: flex;
-  justify-items: space-between;
-  align-content: center;
-  font-size: clamp(1rem, 1vw, 7rem);
-  font-weight: 600;
+  font-size: clamp(1.2rem, 0.25vw, 1.5rem);
+  font-weight: 400;
   justify-content: center;
   opacity: 85%;
-}
-
-#seperator {
-  margin-block: 1rem;
+  text-align: center;
+  padding-inline: 2rem;
 }
 
 .cta {
@@ -230,7 +250,7 @@ h2 {
 
 .projects-wrapper {
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
   place-items: center;
   padding-block: 3rem;
   h2 {
@@ -244,7 +264,7 @@ h2 {
 .projects-list {
   display: grid;
   place-items: center;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .project-card {
@@ -313,8 +333,17 @@ h2 {
     min-width: max-content;
     color: var(--clr-font-primary);
     background-color: var(--clr-secondary-bg);
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem;
     border-radius: 0.5rem;
+    text-decoration: none;
+    transition: all 0.25s ease-in-out;
+  }
+  :hover {
+    background-color: transparent;
+    outline: 1px solid var(--clr-font-accent);
+    color: var(--clr-font-accent);
+    scale: 1.05;
+    transition: all 0.5s ease-in-out;
   }
 }
 
@@ -469,6 +498,16 @@ h2 {
   font-weight: 400;
   max-width: 35rem;
   min-width: 25rem;
+  .blockQuote {
+    display: flex;
+    text-align: justify;
+    /* width: 15rem; */
+    padding-inline: 5rem;
+    /* text-justify: distribute; */
+  }
+  a {
+    color: var(--clr-font-accent);
+  }
 }
 
 .education-wrapper {
@@ -507,6 +546,7 @@ h2 {
 
 #stack-title {
   font-size: unset;
+  padding-bottom: 1rem;
 }
 
 .stack-specialty {
@@ -518,19 +558,18 @@ h2 {
   display: flex;
   align-content: center;
   padding-top: 0.5rem;
-  /* flex-wrap: wrap; */
   place-items: start;
   gap: 1rem;
-  /* justify-content: space-evenly; */
+  justify-content: space-between;
 }
 
 .stack-specialty li {
   display: flex;
+  flex-direction: column;
+  place-items: center;
   gap: 0.5rem;
-  place-items: start;
-  /* flex: 0.25; */
-  width: 100%;
-  align-items: center;
+  font-size: larger;
+  font-weight: 600;
   p {
     opacity: 95%;
   }
@@ -538,8 +577,8 @@ h2 {
 
 .stack-icon {
   color: var(--clr-font-accent);
-  height: 2rem;
-  width: 2rem;
+  height: 3.5rem;
+  width: 3.5rem;
 }
 
 .skill {
@@ -553,7 +592,8 @@ h2 {
 .other-skills {
   display: flex;
   align-items: start;
-  gap: 3rem;
+  justify-content: space-between;
+  /* gap: 3rem; */
   ul {
     display: flex;
     flex-direction: column;
@@ -571,8 +611,8 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 3rem;
-  padding-block: 3rem;
+  gap: 2rem;
+  padding-block: 5rem;
   background-color: var(--clr-primary-bg);
 }
 
@@ -679,9 +719,10 @@ h2 {
     backdrop-filter: blur(2px);
     z-index: 1000;
     font-size: calc(1.5vw + 1.5vh);
-    border: 2px solid var(--clr-font-accent);
+    /* border: 2px solid var(--clr-font-accent); */
     background-color: var(--clr-primary-bg);
     user-select: none;
+    text-align: center;
   }
 
   .nav-mobile-wrapper-open a {
