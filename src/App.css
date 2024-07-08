@@ -827,7 +827,7 @@ section {
   }
 
   .contact-full-wrapper .contact-links-wrapper {
-    flex-wrap: wrap;
+    display: grid;
     a {
       display: flex;
       flex: 1;
