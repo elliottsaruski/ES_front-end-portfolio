@@ -3,7 +3,9 @@ import PropTypes from "prop-types";
 function ProjectCard({ projectID, img, title, stack, desc, site, code }) {
   return (
     <div className="project-card" id="project-3" key={projectID}>
-      <img className="project-img" src={img} />
+      <div className="project-img-wrapper">
+        <img className="project-img" src={img} />
+      </div>
       <div className="project-text-wrapper">
         <h3>{title}</h3>
         <hr></hr>
@@ -19,7 +21,7 @@ function ProjectCard({ projectID, img, title, stack, desc, site, code }) {
           <a href={code} target="_blank">
             code
           </a>
-          <a>more info</a>
+          {/* <a>more info</a> */}
         </div>
       </div>
     </div>
