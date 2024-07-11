@@ -7,7 +7,7 @@ function Home() {
         <h1 className="name">ELLIOTT SARUSKI</h1>
         <p className="name-titles">
           <em>Front-End Engineer </em> & <em>Creative Dev</em> with a specialty
-          in <strong>React JS</strong>
+          in <strong>React.js</strong>
         </p>
         <Links />
 

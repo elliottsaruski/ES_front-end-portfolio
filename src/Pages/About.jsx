@@ -29,16 +29,14 @@ function About() {
             <span className="about-span">
               Hiya! My name is Elliott {"("}2 L{"'"}s, 2 T{"'"}s{")"} Saruski{" "}
               {"("}
-              <em>sa-roo-ski</em> {")"}, a Marketer turned Front-End Engineer -
-              based in Miami, FL - with a specialty in <strong>ReactJS.</strong>{" "}
-              In my spare time I make{" "}
-              <a href="https://soundcloud.com/envimusic" target="_blank">
-                electronic music
-              </a>
-              ,{" "}
+              <em>sa-roo-ski</em>
+              {")"}, a Marketer turned Front-End Engineer - based in Miami, FL -
+              with a specialty in <strong>React.js.</strong> In my spare time I
+              make{" "}
               <a href="https://envimusic.netlify.app" target="_blank">
-                3D graphics, & other multimedia.
-              </a>
+                electronic music, 3D graphics/animations, & other multimedia
+              </a>{" "}
+              under the alias <em>envi</em>.
               <br />
               <br />I{"'"}m currently looking to join a team of developers who
               would find benefit from my keen eye for detail and endless desire
@@ -104,15 +102,13 @@ function About() {
                   <li>HTML</li>
                   <li>CSS3</li>
                   <li>JavaScript</li>
-                  <li>C++ (learning)</li>
-                  <li>Typescript (learning)</li>
                 </ul>
               </div>
               <div className="skill">
                 <h4>Other Libraries</h4>
                 <ul className="other-skills-list">
-                  <li>Framer Motion</li>
                   <li>Tone.js</li>
+                  <li>react-three-fiber</li>
                   <li>Web Audio API</li>
                   <li>p5.js</li>
                 </ul>
@@ -124,6 +120,13 @@ function About() {
                   <li>Adobe CC</li>
                   <li>Ableton Live</li>
                   <li>Blender 3D</li>
+                </ul>
+              </div>
+              <div className="skill">
+                <h4>Currently Learning</h4>
+                <ul className="other-skills-list">
+                  <li>Typescript</li>
+                  <li>C++</li>
                 </ul>
               </div>
             </div>
