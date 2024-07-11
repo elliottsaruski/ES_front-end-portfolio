@@ -6,6 +6,7 @@ import { FaNodeJs } from "react-icons/fa6";
 import { GoLinkExternal } from "react-icons/go";
 
 import ES_headshot from "../assets/ES_headshot.jpg";
+import resume_pdf from "../assets/ES_FED_resumeFORWEB-v1.pdf";
 
 function About() {
   return (
@@ -20,9 +21,13 @@ function About() {
               className="headshot-img"
             />
             <div className="about-resume-cv-wrapper">
-              <button className="view-more-projects-button RESUME">
-                <p>Resume</p> <GoLinkExternal id="link-to-more-projects-icon" />
-              </button>
+              <a
+                className="view-more-projects-button RESUME"
+                href={resume_pdf}
+                target="_blank">
+                <p>Resume</p>
+                <GoLinkExternal id="link-to-more-projects-icon" />
+              </a>
             </div>
           </div>
           <div className="about-col-top-left">

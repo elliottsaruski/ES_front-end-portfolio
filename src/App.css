@@ -354,7 +354,7 @@ section {
   position: relative;
   align-items: center;
   justify-content: center;
-  font-weight: 550;
+  font-weight: 400;
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   text-align: center;
@@ -363,6 +363,7 @@ section {
   border: none;
   flex: 1;
   background: transparent;
+  transition: all 0.5s ease-in-out;
 }
 
 #link-to-more-projects-icon {
@@ -401,6 +402,7 @@ section {
   flex-wrap: wrap;
   gap: 0.25rem 1rem;
   text-align: center;
+  transition: all 0.5s ease-in-out;
 
   a {
     display: flex;
@@ -487,10 +489,10 @@ section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  button {
+  a {
     font-size: 1rem;
     font-weight: 600;
-    padding: 1rem;
+    padding: 1rem 3rem;
   }
 }
 
@@ -609,8 +611,8 @@ section {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
-  padding-block: 5rem;
+  gap: 1rem;
+  padding-block: 3rem;
   background-color: var(--clr-primary-bg);
 }
 
@@ -792,7 +794,7 @@ section {
   }
 
   .other-skills {
-    gap: 2rem;
+    gap: auto;
   }
 }
 

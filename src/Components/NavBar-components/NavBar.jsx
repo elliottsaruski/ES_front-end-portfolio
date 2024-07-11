@@ -1,5 +1,8 @@
 import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
+import { GoLinkExternal } from "react-icons/go";
+
+import resume_pdf from "../../assets/ES_FED_resumeFORWEB-v1.pdf";
 
 function NavBar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -36,6 +39,13 @@ function NavBar() {
           </a>
           <a href="#contact" className="contact">
             Contact
+          </a>
+          <a
+            className="view-more-projects-button RESUME"
+            href={resume_pdf}
+            target="_blank">
+            <p>Resume</p>
+            <GoLinkExternal id="link-to-more-projects-icon" />
           </a>
         </div>
         <div className="hamburger-wrapper">
