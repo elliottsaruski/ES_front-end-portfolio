@@ -2,7 +2,7 @@ import { useState } from "react";
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GoLinkExternal } from "react-icons/go";
 
-import resume_pdf from "../../assets/ESaruski_RESUME.pdf";
+import resume_pdf from "../assets/ES_RESUME_FED-WEB.pdf";
 
 function NavBar() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
