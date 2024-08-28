@@ -724,6 +724,10 @@ section {
     background-color: var(--clr-primary-bg);
     user-select: none;
     text-align: center;
+
+    .view-more-projects-button {
+      margin-block: 2rem;
+    }
   }
 
   .nav-mobile-wrapper-open a {

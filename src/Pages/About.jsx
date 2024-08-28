@@ -5,7 +5,7 @@ import { FaNodeJs } from "react-icons/fa6";
 // import { IoDownload } from "react-icons/io5";
 import { GoLinkExternal } from "react-icons/go";
 
-import ES_headshot from "../assets/ES_headshot.jpg";
+import ES_headshot from "../assets/es-headshot.jpg";
 import resume_pdf from "../assets/ES_RESUME_FED-WEB.pdf";
 
 function About() {

@@ -89,6 +89,13 @@ function NavBar() {
             href="#contact">
             Contact
           </a>
+          <a
+            className="view-more-projects-button RESUME"
+            href={resume_pdf}
+            target="_blank">
+            <p>Resume</p>
+            <GoLinkExternal id="link-to-more-projects-icon" />
+          </a>
         </nav>
       </div>
     </div>
