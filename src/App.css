@@ -590,10 +590,11 @@ section {
 }
 
 .other-skills {
-  display: flex;
+  display: grid;
   align-items: start;
-  /* justify-content: space-between; */
-  gap: 3rem;
+  gap: 0rem 1rem;
+
+  grid-template-columns: repeat(2, auto);
   ul {
     display: flex;
     flex-direction: column;
